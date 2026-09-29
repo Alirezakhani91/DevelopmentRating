@@ -64,7 +64,7 @@ button,input,select{font:inherit}
 .btn:hover{border-color:#4f8ef7;color:#9fc0ff}
 
 .hero{
-  display:grid;grid-template-columns:1.2fr repeat(4,1fr);gap:10px;
+  display:grid;grid-template-columns:1.2fr repeat(5,1fr);gap:10px;
   margin-bottom:12px
 }
 .heroMain,.heroKpi{
@@ -432,7 +432,7 @@ button,input,select{font:inherit}
 
 @media(max-width:1300px){
   .hero{grid-template-columns:1.2fr repeat(2,1fr)}
-  .heroKpi:nth-child(4),.heroKpi:nth-child(5){display:none}
+  .heroKpi:nth-child(5),.heroKpi:nth-child(6){display:none}
   .driverCard,.gridHeader{
     grid-template-columns:76px minmax(240px,1.4fr) repeat(4,minmax(135px,.8fr))
   }
@@ -488,6 +488,11 @@ button,input,select{font:inherit}
       <div class="kSub" id="newSub">—</div>
     </div>
     <div class="heroKpi" style="--c:#ffb020">
+      <div class="kLabel">کل قرارداد / هدف کل قرارداد</div>
+      <div class="kVal" id="contractsVsTarget">—</div>
+      <div class="kSub" id="contractsVsTargetSub">—</div>
+    </div>
+    <div class="heroKpi" style="--c:#f97316">
       <div class="kLabel">کل افتتاح سال</div>
       <div class="kVal" id="openTotal">—</div>
       <div class="kSub">فروشگاه افتتاح‌شده</div>
@@ -828,6 +833,8 @@ function render(){
   ytdSub.textContent=`${totalContracts.toLocaleString('fa-IR')} قرارداد از هدف ${ytdTarget.toLocaleString('fa-IR')}`;
   newPct.textContent=fmt(np)+'%';
   newSub.textContent=`${newContracts.toLocaleString('fa-IR')} قرارداد از هدف ${newTarget.toLocaleString('fa-IR')}`;
+  contractsVsTarget.textContent=`${totalContracts.toLocaleString('fa-IR')} / ${ytdTarget.toLocaleString('fa-IR')}`;
+  contractsVsTargetSub.textContent=`تحقق ${fmt(ytd)}% از هدف کل قرارداد`;
   openTotal.textContent=sum(DATA,'totalOpened').toLocaleString('fa-IR');
   criticalCount.textContent=DATA.filter(d=>d.ytdPct<40).length.toLocaleString('fa-IR');
 
