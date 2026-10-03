@@ -130,15 +130,15 @@ button,input,select{font:inherit}
   padding:18px 20px 12px
 }
 .execKicker{
-  font-size:10px;font-weight:950;letter-spacing:.14em;
+  font-size:12px;font-weight:950;letter-spacing:.14em;
   color:#7dd3fc
 }
 .execArenaTitle{
-  font-size:25px;font-weight:950;margin-top:3px;
+  font-size:28px;font-weight:950;margin-top:3px;
   letter-spacing:-.025em
 }
 .execArenaSub{
-  font-size:10px;color:#7f90a6;line-height:1.8;margin-top:4px
+  font-size:12px;color:#7f90a6;line-height:1.8;margin-top:4px
 }
 .execChampionCallout{
   min-width:330px;
@@ -156,13 +156,13 @@ button,input,select{font:inherit}
   box-shadow:0 8px 22px rgba(255,176,32,.16)
 }
 .execChampionCallout span{
-  display:block;font-size:7px;color:#a3916a;letter-spacing:.08em
+  display:block;font-size:9px;color:#a3916a;letter-spacing:.08em
 }
 .execChampionCallout strong{
-  display:block;font-size:13px;margin-top:2px
+  display:block;font-size:15px;margin-top:2px
 }
 .execChampionCallout>b{
-  font-size:24px;color:#ffcf5c;white-space:nowrap
+  font-size:28px;color:#ffcf5c;white-space:nowrap
 }
 
 .execTrack{
@@ -225,17 +225,17 @@ button,input,select{font:inherit}
   background:linear-gradient(135deg,#ffe17b,#ffad16)
 }
 .execTier{
-  font-size:8px;font-weight:900;color:var(--status);
+  font-size:10px;font-weight:900;color:var(--status);
   padding:4px 7px;border-radius:999px;
   background:color-mix(in srgb,var(--status) 8%,#111827);
   border:1px solid color-mix(in srgb,var(--status) 20%,transparent)
 }
 .execName{
-  margin-top:11px;font-size:16px;font-weight:950;line-height:1.4;
+  margin-top:11px;font-size:19px;font-weight:950;line-height:1.4;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis
 }
 .execRegions{
-  font-size:8px;color:#74859b;margin-top:2px
+  font-size:12px;color:#74859b;margin-top:3px;font-weight:800
 }
 .execGaugeRow{
   display:grid;grid-template-columns:82px 1fr;gap:10px;align-items:center;margin-top:12px
@@ -251,11 +251,11 @@ button,input,select{font:inherit}
   background:#0d141e;border:1px solid rgba(255,255,255,.045)
 }
 .execGaugeInner{position:relative;z-index:1;text-align:center}
-.execGaugeInner b{display:block;font-size:18px;line-height:1;color:var(--accent)}
-.execGaugeInner span{display:block;font-size:6px;color:#718198;margin-top:3px}
-.execPrimary .label{font-size:7px;color:#75869c}
-.execPrimary .value{font-size:24px;font-weight:950;line-height:1;margin-top:3px;color:var(--status)}
-.execPrimary .sub{font-size:7px;color:#66778d;margin-top:4px}
+.execGaugeInner b{display:block;font-size:22px;line-height:1;color:var(--accent)}
+.execGaugeInner span{display:block;font-size:8px;color:#718198;margin-top:3px}
+.execPrimary .label{font-size:9px;color:#75869c}
+.execPrimary .value{font-size:28px;font-weight:950;line-height:1;margin-top:3px;color:var(--status)}
+.execPrimary .sub{font-size:9px;color:#66778d;margin-top:4px}
 .execMiniGrid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:11px
 }
@@ -263,14 +263,14 @@ button,input,select{font:inherit}
   padding:7px 5px;text-align:center;border-radius:9px;
   background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.045)
 }
-.execMini b{display:block;font-size:12px}
-.execMini span{display:block;font-size:6px;color:#6f8097;margin-top:2px}
+.execMini b{display:block;font-size:15px}
+.execMini span{display:block;font-size:8px;color:#6f8097;margin-top:2px}
 .execCompare{
   margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06);
   display:flex;align-items:center;justify-content:space-between;gap:7px
 }
-.execCompare span{font-size:7px;color:#73849a}
-.execCompare b{font-size:10px}
+.execCompare span{font-size:9px;color:#73849a}
+.execCompare b{font-size:12px}
 .execCompare .up{color:#34d399}.execCompare .down{color:#ff7488}.execCompare .flat{color:#fbbf24}
 
 .execArenaFoot{
@@ -282,8 +282,8 @@ button,input,select{font:inherit}
   background:#0c131d;padding:10px 14px;
   display:flex;align-items:center;justify-content:space-between;gap:8px
 }
-.execFootStat span{font-size:8px;color:#718198}
-.execFootStat b{font-size:11px;color:#dce5ef}
+.execFootStat span{font-size:10px;color:#718198}
+.execFootStat b{font-size:13px;color:#dce5ef}
 
 @media(max-width:1250px){
   .execGrid{grid-template-columns:repeat(5,minmax(190px,1fr));overflow-x:auto;padding-bottom:4px}
@@ -323,7 +323,7 @@ button,input,select{font:inherit}
   display:grid;
   grid-template-columns:105px minmax(330px,1.55fr) minmax(200px,.95fr) minmax(185px,.86fr) minmax(185px,.86fr) minmax(185px,.86fr);
   gap:10px;align-items:center;
-  min-height:138px;padding:16px 18px;
+  min-height:154px;padding:17px 18px;
   border:1px solid rgba(255,255,255,.055);border-radius:16px;
   background:
     radial-gradient(420px 150px at 100% -10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 58%),
@@ -372,11 +372,11 @@ button,input,select{font:inherit}
 .posLabel{font-size:9px;color:#6c7d93;margin-top:3px;text-align:center;font-weight:800}
 
 .identity{min-width:0}
-.name{font-size:21px;font-weight:950;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.exec{font-size:12px;color:#8394aa;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.name{font-size:23px;font-weight:950;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.exec{font-size:13px;color:#8394aa;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .statusLine{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .tag{
-  font-size:10px;padding:5px 8px;border-radius:999px;
+  font-size:11px;padding:6px 9px;border-radius:999px;
   background:#172338;border:1px solid #26364e;color:#9eb0c6
 }
 .tag.status{color:var(--status);border-color:color-mix(in srgb,var(--status) 22%,transparent);background:color-mix(in srgb,var(--status) 8%,#111827)}
@@ -410,12 +410,12 @@ button,input,select{font:inherit}
 }
 .metric.newMetric:before{background:linear-gradient(90deg,var(--newAccent),transparent)}
 .metric.newMetric .metricValue{color:var(--newAccent)!important}
-.metric.newMetric .metricLabel{color:#8dcdf6}
-.metric.ytdMetric .metricLabel{color:#b7f5dc}
-.metricLabel{font-size:10px;color:#78899f}
-.metricValue{font-size:28px;font-weight:950;line-height:1.05;margin-top:5px}
+.metric.newMetric .metricLabel{color:#8dcdf6;font-weight:900}
+.metric.ytdMetric .metricLabel{color:#b7f5dc;font-weight:900}
+.metricLabel{font-size:12px;color:#78899f}
+.metricValue{font-size:32px;font-weight:950;line-height:1.05;margin-top:5px}
 .metricValue.primary{color:var(--accent)}
-.metricSub{font-size:10px;color:#64758b;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.metricSub{font-size:15px;color:#64758b;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:800}
 .progress{height:6px;border-radius:999px;background:#182438;overflow:hidden;margin-top:7px}
 .progressFill{height:100%;border-radius:999px;background:var(--accent)}
 .progressFill.new{background:var(--newAccent)}
@@ -425,7 +425,7 @@ button,input,select{font:inherit}
   display:grid;
   grid-template-columns:105px minmax(330px,1.55fr) minmax(200px,.95fr) minmax(185px,.86fr) minmax(185px,.86fr) minmax(185px,.86fr);
   gap:10px;padding:9px 14px;margin:0 11px 2px;
-  color:#6f8198;font-size:10px;font-weight:800
+  color:#6f8198;font-size:12px;font-weight:850
 }
 .gridHeader div{text-align:center}
 .gridHeader div:nth-child(2){text-align:right}
@@ -475,7 +475,7 @@ button,input,select{font:inherit}
     <div class="heroMain">
       <div class="eyebrow">CEO PERFORMANCE SNAPSHOT</div>
       <div class="heroTitle">رتبه‌بندی عملکرد توسعه مناطق</div>
-      <div class="heroText">تمام شاخص‌های کلیدی هر منطقه در یک ردیف؛ جایگاه، تحقق کل، عملکرد از شهریور، افتتاح، Gap، قرارداد و فاصله تا رتبه بالاتر.</div>
+      <div class="heroText">تمام شاخص‌های کلیدی هر منطقه در یک ردیف؛ جایگاه، تحقق کل، عملکرد از شهریور، افتتاح، قرارداد و مانده تا هدف جدید.</div>
     </div>
     <div class="heroKpi" style="--c:#00d084">
       <div class="kLabel">تحقق کل هدف تا مهر</div>
@@ -564,7 +564,7 @@ button,input,select{font:inherit}
         <b id="execBestOpen">—</b>
       </div>
       <div class="execFootStat">
-        <span>کمترین Gap</span>
+        <span>کمترین مانده تا هدف جدید</span>
         <b id="execBestGap">—</b>
       </div>
     </div>
@@ -590,7 +590,7 @@ button,input,select{font:inherit}
       <div>تحقق کل تا مهر</div>
       <div>تحقق از شهریور</div>
       <div>افتتاح / قرارداد</div>
-      <div>Gap / Pipeline</div>
+      <div>مانده تا هدف جدید / Pipeline</div>
       
     </div>
 
@@ -656,7 +656,9 @@ function mapData(objects){
     if(!ytdPct&&ytdTarget)ytdPct=totalContracts/ytdTarget*100;
 
     const gap=Math.max(ytdTarget-totalContracts,0);
-    return{name,exec,newTarget,newHQ,newFran,newContracts,pipeline,totalHQ,totalFran,totalContracts,totalOpened,ytdTarget,newPct,ytdPct,gap};
+    const newGap=Math.max(newTarget-newContracts,0);
+    const newOver=Math.max(newContracts-newTarget,0);
+    return{name,exec,newTarget,newHQ,newFran,newContracts,pipeline,totalHQ,totalFran,totalContracts,totalOpened,ytdTarget,newPct,ytdPct,gap,newGap,newOver};
   }).filter(Boolean);
 }
 
@@ -735,7 +737,8 @@ function buildExecutiveData(source){
   return Object.values(groups).map(g=>{
     g.ytdPct=g.ytdTarget?g.totalContracts/g.ytdTarget*100:0;
     g.newPct=g.newTarget?g.newContracts/g.newTarget*100:0;
-    g.gap=Math.max(g.ytdTarget-g.totalContracts,0);
+    g.gap=Math.max(g.newTarget-g.newContracts,0);
+    g.over=Math.max(g.newContracts-g.newTarget,0);
     g.momentum=g.newPct-g.ytdPct;
     return g;
   }).sort((a,b)=>b.ytdPct-a.ytdPct||b.newPct-a.newPct);
@@ -797,7 +800,7 @@ function renderExecutives(){
           </div>
           <div class="execMini">
             <b>${d.gap.toLocaleString('fa-IR')}</b>
-            <span>Gap</span>
+            <span>مانده هدف جدید</span>
           </div>
         </div>
 
@@ -887,9 +890,15 @@ function render(){
         </div>
 
         <div class="metric">
-          <div class="metricLabel">Gap تا مهر</div>
-          <div class="metricValue" style="color:${d.gap===0?'#34d399':'#ffb020'}">${d.gap.toLocaleString('fa-IR')}</div>
-          <div class="metricSub">فاصله عددی تا هدف</div>
+          <div class="metricLabel">مانده تا هدف جدید</div>
+          <div class="metricValue" style="color:${d.newGap===0?'#34d399':'#ffb020'}">
+            ${d.newGap===0 ? (d.newOver>0 ? '+'+d.newOver.toLocaleString('fa-IR') : '0') : d.newGap.toLocaleString('fa-IR')}
+          </div>
+          <div class="metricSub">
+            ${d.newGap===0
+              ? (d.newOver>0 ? 'مازاد از هدف جدید' : 'هدف جدید محقق شده')
+              : 'قرارداد مانده تا تحقق هدف جدید'}
+          </div>
         </div>
       </article>`;
   }).join('');
