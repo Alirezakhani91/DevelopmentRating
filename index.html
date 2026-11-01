@@ -395,11 +395,11 @@ button,input,select{font:inherit}
     );
   border-color:color-mix(in srgb,var(--accent) 24%,rgba(255,255,255,.04))
 }
-.metric.ytdMetric:before,
+.metric.totalMetric:before,
 .metric.newMetric:before{
   content:"";display:block;height:3px;border-radius:999px;margin-bottom:9px
 }
-.metric.ytdMetric:before{background:linear-gradient(90deg,var(--accent),transparent)}
+.metric.totalMetric:before{background:linear-gradient(90deg,var(--accent),transparent)}
 .metric.newMetric{
   background:
     linear-gradient(145deg,
@@ -411,7 +411,7 @@ button,input,select{font:inherit}
 .metric.newMetric:before{background:linear-gradient(90deg,var(--newAccent),transparent)}
 .metric.newMetric .metricValue{color:var(--newAccent)!important}
 .metric.newMetric .metricLabel{color:#8dcdf6;font-weight:900}
-.metric.ytdMetric .metricLabel{color:#b7f5dc;font-weight:900}
+.metric.totalMetric .metricLabel{color:#b7f5dc;font-weight:900}
 .metricLabel{font-size:12px;color:#78899f}
 .metricValue{font-size:32px;font-weight:950;line-height:1.05;margin-top:5px}
 .metricValue.primary{color:var(--accent)}
@@ -429,6 +429,33 @@ button,input,select{font:inherit}
 }
 .gridHeader div{text-align:center}
 .gridHeader div:nth-child(2){text-align:right}
+
+/* One shared sort mode controls both regional and executive standings. */
+.sortModeBar{
+  display:flex;align-items:center;flex-wrap:wrap;gap:9px;
+  margin:-1px 0 14px;padding:12px 14px;
+  border:1px solid #26344a;border-radius:13px;background:#0d1520
+}
+.sortModeCaption{font-size:12px;color:#cbd5e1;font-weight:850;margin-left:4px}
+.sortModeBtn{
+  border:1px solid #34445b;border-radius:10px;background:#172132;
+  color:#cad6e5;padding:9px 13px;cursor:pointer;font-size:12px;font-weight:900;
+  transition:background .15s,border-color .15s,color .15s
+}
+.sortModeBtn:hover{border-color:#67a1fa;color:#fff}
+.sortModeBtn.isActive{background:#0b3a31;border-color:#00d084;color:#66f0b5}
+#sortNewBtn.isActive{background:#112f4b;border-color:#38bdf8;color:#a3e4ff}
+.sortModeHint{color:#7e90a9;font-size:11px;margin-right:auto}
+.rankBasis{display:inline-flex;color:#89baf5;background:rgba(79,142,247,.09);
+  border:1px solid rgba(79,142,247,.23);border-radius:7px;font-size:10px;
+  font-weight:800;padding:5px 9px;margin-top:8px}
+.driverCard .metric.isRankMetric{border-color:#67a1fa;box-shadow:inset 0 0 0 1px rgba(103,161,250,.14)}
+.execCard.rankNew .execPrimary{padding:7px 9px;background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.18);border-radius:10px}
+@media(max-width:900px){
+  .sortModeBar{padding:10px;gap:7px}
+  .sortModeBtn{flex:1;min-width:145px;font-size:11px}
+  .sortModeHint{margin-right:0;width:100%;line-height:1.7}
+}
 
 @media(max-width:1300px){
   .hero{grid-template-columns:1.2fr repeat(2,1fr)}
@@ -475,15 +502,15 @@ button,input,select{font:inherit}
     <div class="heroMain">
       <div class="eyebrow">CEO PERFORMANCE SNAPSHOT</div>
       <div class="heroTitle">رتبه‌بندی عملکرد توسعه مناطق</div>
-      <div class="heroText">تمام شاخص‌های کلیدی هر منطقه در یک ردیف؛ جایگاه، تحقق کل، عملکرد از شهریور، افتتاح، قرارداد و مانده تا هدف جدید.</div>
+      <div class="heroText">تمام شاخص‌های کلیدی هر منطقه در یک ردیف؛ جایگاه، تحقق هدف کل، تحقق هدف جدید از شهریور، افتتاح، قرارداد و مانده تا هدف جدید.</div>
     </div>
     <div class="heroKpi" style="--c:#00d084">
-      <div class="kLabel">تحقق کل هدف</div>
-      <div class="kVal" id="ytdPct">—</div>
-      <div class="kSub" id="ytdSub">—</div>
+      <div class="kLabel">تحقق هدف کل</div>
+      <div class="kVal" id="totalPct">—</div>
+      <div class="kSub" id="totalSub">—</div>
     </div>
     <div class="heroKpi" style="--c:#4f8ef7">
-      <div class="kLabel">تحقق از شهریور</div>
+      <div class="kLabel">تحقق هدف جدید از شهریور</div>
       <div class="kVal" id="newPct">—</div>
       <div class="kSub" id="newSub">—</div>
     </div>
@@ -514,9 +541,9 @@ button,input,select{font:inherit}
       <option value="watch">متوسط 40–69%</option>
       <option value="risk">ضعیف &lt; 40%</option>
     </select>
-    <select id="sortFilter" onchange="applyFilters()">
-      <option value="ytd">رتبه‌بندی بر اساس تحقق کل تا مهر</option>
-      <option value="new">رتبه‌بندی بر اساس تحقق از شهریور</option>
+    <select id="sortFilter" onchange="applyFilters()" aria-label="انتخاب معیار مرتب‌سازی">
+      <option value="total">رتبه‌بندی بر اساس تحقق هدف کل</option>
+      <option value="new">رتبه‌بندی بر اساس تحقق هدف جدید از شهریور (بیشترین به کمترین)</option>
       <option value="gap">رتبه‌بندی بر اساس کمترین Gap</option>
       <option value="opened">رتبه‌بندی بر اساس افتتاح</option>
     </select>
@@ -524,7 +551,13 @@ button,input,select{font:inherit}
     <div class="count" id="count">—</div>
   </section>
 
-  
+  <div class="sortModeBar" role="group" aria-label="انتخاب مبنای رتبه‌بندی مناطق و مدیران اجرایی">
+    <span class="sortModeCaption">مبنای رتبه‌بندی:</span>
+    <button type="button" id="sortTotalBtn" class="sortModeBtn isActive" aria-pressed="true" onclick="setSortMode('total')">تحقق هدف کل</button>
+    <button type="button" id="sortNewBtn" class="sortModeBtn" aria-pressed="false" onclick="setSortMode('new')">تحقق هدف جدید از شهریور</button>
+    <span class="sortModeHint" id="sortModeHint">رتبه‌بندی مناطق و مدیران اجرایی بر اساس تحقق هدف کل</span>
+  </div>
+
   <section class="executiveArena">
     <div class="execArenaBg"></div>
 
@@ -532,7 +565,8 @@ button,input,select{font:inherit}
       <div>
         <div class="execKicker">EXECUTIVE COMMAND ARENA</div>
         <div class="execArenaTitle">عملکرد مدیران اجرایی</div>
-        <div class="execArenaSub">نمای تجمیعی عملکرد مناطق تحت مدیریت هر مدیر اجرایی؛ رتبه، تحقق کل، عملکرد از شهریور، قرارداد، افتتاح و Gap در یک نمای ویژه.</div>
+        <div class="execArenaSub">نمای تجمیعی عملکرد مناطق تحت مدیریت هر مدیر اجرایی؛ رتبه، تحقق هدف کل، تحقق هدف جدید از شهریور، قرارداد، افتتاح و Gap در یک نمای ویژه.</div>
+        <div class="rankBasis" id="execRankBasis">رتبه‌بندی بر اساس: تحقق هدف کل</div>
       </div>
 
       <div class="execChampionCallout" id="execChampionCallout">
@@ -553,10 +587,10 @@ button,input,select{font:inherit}
     <div class="execArenaFoot">
       <div class="execFootStat">
         <span>بیشترین تحقق کل</span>
-        <b id="execBestYtd">—</b>
+        <b id="execBestTotal">—</b>
       </div>
       <div class="execFootStat">
-        <span>بهترین عملکرد از شهریور</span>
+        <span>بالاترین تحقق هدف جدید از شهریور</span>
         <b id="execBestNew">—</b>
       </div>
       <div class="execFootStat">
@@ -575,6 +609,7 @@ button,input,select{font:inherit}
       <div>
         <div class="champTitle">Regional Standings — رتبه ۱ تا ۲۴</div>
         <div class="champSub">نمای خطی شبیه جدول Formula 1؛ هرچه از صدر جدول پایین‌تر می‌رویم، رنگ کارت‌ها هم وخامت عملکرد را بیشتر القا می‌کند و شاخص‌های کلیدی در دو ستون متمایز نمایش داده می‌شوند.</div>
+        <div class="rankBasis" id="regionalRankBasis">رتبه‌بندی بر اساس: تحقق هدف کل</div>
       </div>
       <div class="legend">
         <span><i style="background:#00d084"></i>عالی</span>
@@ -587,8 +622,8 @@ button,input,select{font:inherit}
     <div class="gridHeader">
       <div>رتبه</div>
       <div>مدیر منطقه / مدیر اجرایی</div>
-      <div>تحقق کل تا مهر</div>
-      <div>تحقق از شهریور</div>
+      <div>تحقق هدف کل</div>
+      <div>تحقق هدف جدید از شهریور</div>
       <div>افتتاح / قرارداد</div>
       <div>مانده تا هدف جدید / Pipeline</div>
       
@@ -638,7 +673,19 @@ function mapData(objects){
     };
     const name=String(get(['مدیر منطقه'])||'').trim();if(!name)return null;
     const exec=String(get(['مدیر اجرایی'])||'').trim()||'تعیین نشده';
-    const newTarget=n(get(['هدف جدید از شهریور تا مهر']));
+    // Prefer timeless, exact source headers; legacy month-ended headers remain readable by pattern.
+    const metric=(names,fallback)=>{
+      for(const name of names){
+        const key=norm(name);
+        if(Object.prototype.hasOwnProperty.call(m,key))return m[key];
+      }
+      const key=Object.keys(m).find(fallback);
+      return key===undefined?'':m[key];
+    };
+    const newTarget=n(metric(
+      ['هدف جدید از شهریور','هدف جدید قراردادی از شهریور','هدف جدید شهریور','هدف جدید'],
+      key=>key.startsWith('هدف جدید')&&key.includes('شهریور')
+    ));
     const newHQ=n(get(['قرارداد ستادی از شهریور','قرارداد ستادی']));
     const newFran=n(get(['ترهین فرانچایز از شهریور','ترهین فرانچایز','قرارداد فرانچایز از شهریور','قرارداد فرانچایز']));
     const newContracts=n(get(['کل قرارداد از شهریور']))||(newHQ+newFran);
@@ -647,18 +694,27 @@ function mapData(objects){
     const totalFran=n(get(['مجموع قرارداد فرانچایز']));
     const totalContracts=n(get(['مجموع کل قرارداد','مجموع قرارداد']));
     const totalOpened=n(get(['مجموع افتتاح']));
-    const ytdTarget=n(get(['هدف تا مهر ماه','هدف تا مهر']));
+    const totalTarget=n(metric(
+      ['هدف کل','هدف کل قراردادی','هدف کل قرارداد','هدف سالانه','هدف کل سال','هدف نهایی'],
+      key=>/^هدف(?:\s+قراردادی)?\s+تا\s+\S+/.test(key)
+    ));
 
-    let newPct=pct(get(['تحقق هدف جدید قراردادی از شهریور','تحقق هدف قراردادی از شهریور','تحقق هدف جدید قراردادی']));
+    let newPct=pct(metric(
+      ['تحقق هدف جدید از شهریور','تحقق هدف جدید قراردادی از شهریور','تحقق هدف قراردادی از شهریور','تحقق هدف جدید قراردادی','درصد تحقق هدف جدید از شهریور'],
+      key=>key.includes('تحقق')&&key.includes('شهریور')
+    ));
     if(!newPct&&newTarget)newPct=newContracts/newTarget*100;
 
-    let ytdPct=pct(get(['تحقق هدف قراردادی تا مهر','تحقق کل هدف قراردادی تا مهر']));
-    if(!ytdPct&&ytdTarget)ytdPct=totalContracts/ytdTarget*100;
+    let totalPct=pct(metric(
+      ['تحقق هدف کل','تحقق کل هدف','تحقق هدف کل قراردادی','تحقق کل هدف قراردادی','درصد تحقق هدف کل'],
+      key=>key.includes('تحقق')&&key.includes('هدف')&&key.includes('تا')&&!key.includes('شهریور')
+    ));
+    if(!totalPct&&totalTarget)totalPct=totalContracts/totalTarget*100;
 
-    const gap=Math.max(ytdTarget-totalContracts,0);
+    const gap=Math.max(totalTarget-totalContracts,0);
     const newGap=Math.max(newTarget-newContracts,0);
     const newOver=Math.max(newContracts-newTarget,0);
-    return{name,exec,newTarget,newHQ,newFran,newContracts,pipeline,totalHQ,totalFran,totalContracts,totalOpened,ytdTarget,newPct,ytdPct,gap,newGap,newOver};
+    return{name,exec,newTarget,newHQ,newFran,newContracts,pipeline,totalHQ,totalFran,totalContracts,totalOpened,totalTarget,newPct,totalPct,gap,newGap,newOver};
   }).filter(Boolean);
 }
 
@@ -692,23 +748,50 @@ function populateExec(){
 }
 
 function resetFilters(){
-  search.value='';execFilter.value='';statusFilter.value='';sortFilter.value='ytd';
+  search.value='';execFilter.value='';statusFilter.value='';sortFilter.value='total';
   applyFilters();
+}
+
+function setSortMode(mode){
+  if(mode!=='total'&&mode!=='new')return;
+  document.getElementById('sortFilter').value=mode;
+  applyFilters();
+}
+
+function rankingTitle(mode){
+  return ({total:'تحقق هدف کل',new:'تحقق هدف جدید از شهریور',
+    gap:'کمترین مانده تا هدف جدید',opened:'بیشترین افتتاح'})[mode] || 'تحقق هدف کل';
+}
+
+function compareRank(a,b,mode){
+  if(mode==='new')return b.newPct-a.newPct || b.totalPct-a.totalPct;
+  if(mode==='gap')return (a.newGap??a.gap)-(b.newGap??b.gap) || b.newPct-a.newPct;
+  if(mode==='opened')return b.totalOpened-a.totalOpened || b.totalPct-a.totalPct;
+  return b.totalPct-a.totalPct || b.newPct-a.newPct;
+}
+
+function updateSortUI(mode){
+  for(const m of ['total','new']){
+    const el=document.getElementById(m==='total'?'sortTotalBtn':'sortNewBtn');
+    const active=m===mode;
+    el.classList.toggle('isActive',active);
+    el.setAttribute('aria-pressed',String(active));
+  }
+  const title=rankingTitle(mode);
+  document.getElementById('sortModeHint').textContent='مبنای فعلی رتبه‌بندی مناطق و مدیران اجرایی: '+title;
+  document.getElementById('execRankBasis').textContent='رتبه‌بندی بر اساس: '+title;
+  document.getElementById('regionalRankBasis').textContent='رتبه‌بندی بر اساس: '+title;
 }
 
 function applyFilters(){
   const q=search.value.trim().toLowerCase(),ex=execFilter.value,st=statusFilter.value,sort=sortFilter.value;
-  DATA=ALL.filter(d=>(!q||(d.name+' '+d.exec).toLowerCase().includes(q))&&(!ex||d.exec===ex)&&(!st||statusClass(d.ytdPct)===st));
-
-  if(sort==='ytd')DATA.sort((a,b)=>b.ytdPct-a.ytdPct||b.newPct-a.newPct);
-  if(sort==='new')DATA.sort((a,b)=>b.newPct-a.newPct||b.ytdPct-a.ytdPct);
-  if(sort==='gap')DATA.sort((a,b)=>a.gap-b.gap||b.ytdPct-a.ytdPct);
-  if(sort==='opened')DATA.sort((a,b)=>b.totalOpened-a.totalOpened||b.ytdPct-a.ytdPct);
-
+  const activePct=d=>sort==='new'?d.newPct:d.totalPct;
+  DATA=ALL.filter(d=>(!q||(d.name+' '+d.exec).toLowerCase().includes(q))&&(!ex||d.exec===ex)&&(!st||statusClass(activePct(d))===st));
+  DATA.sort((a,b)=>compareRank(a,b,sort));
+  updateSortUI(sort);
   count.textContent=DATA.length.toLocaleString('fa-IR')+' منطقه';
   render();
 }
-
 
 function buildExecutiveData(source){
   const groups={};
@@ -716,7 +799,7 @@ function buildExecutiveData(source){
     if(!groups[d.exec]){
       groups[d.exec]={
         name:d.exec,regions:0,
-        ytdTarget:0,totalContracts:0,
+        totalTarget:0,totalContracts:0,
         newTarget:0,newContracts:0,
         totalOpened:0,pipeline:0,
         totalHQ:0,totalFran:0,gap:0
@@ -724,7 +807,7 @@ function buildExecutiveData(source){
     }
     const g=groups[d.exec];
     g.regions++;
-    g.ytdTarget+=d.ytdTarget;
+    g.totalTarget+=d.totalTarget;
     g.totalContracts+=d.totalContracts;
     g.newTarget+=d.newTarget;
     g.newContracts+=d.newContracts;
@@ -735,38 +818,40 @@ function buildExecutiveData(source){
   });
 
   return Object.values(groups).map(g=>{
-    g.ytdPct=g.ytdTarget?g.totalContracts/g.ytdTarget*100:0;
+    g.totalPct=g.totalTarget?g.totalContracts/g.totalTarget*100:0;
     g.newPct=g.newTarget?g.newContracts/g.newTarget*100:0;
     g.gap=Math.max(g.newTarget-g.newContracts,0);
     g.over=Math.max(g.newContracts-g.newTarget,0);
-    g.momentum=g.newPct-g.ytdPct;
+    g.momentum=g.newPct-g.totalPct;
     return g;
-  }).sort((a,b)=>b.ytdPct-a.ytdPct||b.newPct-a.newPct);
+  });
 }
 
 function renderExecutives(){
-  const execs=buildExecutiveData(ALL);
+  const mode=sortFilter.value;
+  const execs=buildExecutiveData(ALL).sort((a,b)=>compareRank(a,b,mode));
   if(!execs.length) return;
 
   const total=execs.length;
-  const avg=execs.reduce((s,d)=>s+d.ytdPct,0)/total;
+  const selectedPct=d=>mode==='new'?d.newPct:d.totalPct;
+  const avg=execs.reduce((s,d)=>s+selectedPct(d),0)/total;
 
   document.getElementById('execGrid').innerHTML=execs.map((d,i)=>{
     const rank=i+1;
     const accent=accentByRank(rank,total);
-    const s=color(d.ytdPct);
+    const s=color(selectedPct(d));
     const momentum=d.momentum;
     const momentumClass=momentum>5?'up':momentum<-5?'down':'flat';
     const momentumText=momentum>5?'▲ شتاب مثبت':momentum<-5?'▼ افت شتاب':'● پایدار';
-    const vsAvg=d.ytdPct-avg;
+    const vsAvg=selectedPct(d)-avg;
     const vsText=(vsAvg>0?'+':'')+fmt(vsAvg)+'pp';
 
     return `
-      <article class="execCard ${rank===1?'rank1':''}" data-rank="0${rank}" style="--accent:${accent};--status:${s}">
+      <article class="execCard ${rank===1?'rank1':''} ${mode==='new'?'rankNew':''}" data-rank="0${rank}" style="--accent:${accent};--status:${s}">
         <div class="execTop">
           <div class="execRank">
             <div class="execPos">${rank.toLocaleString('fa-IR')}</div>
-            <div class="execTier">${label(d.ytdPct)}</div>
+            <div class="execTier">${label(selectedPct(d))}</div>
           </div>
           <div style="font-size:8px;color:${momentum>=0?'#34d399':'#ff7488'}">${momentumText}</div>
         </div>
@@ -775,15 +860,15 @@ function renderExecutives(){
         <div class="execRegions">${d.regions.toLocaleString('fa-IR')} منطقه تحت مدیریت</div>
 
         <div class="execGaugeRow">
-          <div class="execGauge" style="--p:${Math.min(d.ytdPct,100)}">
+          <div class="execGauge" style="--p:${Math.min(d.totalPct,100)}">
             <div class="execGaugeInner">
-              <b>${fmt(d.ytdPct)}%</b>
-              <span>تا مهر</span>
+              <b>${fmt(d.totalPct)}%</b>
+              <span>هدف کل</span>
             </div>
           </div>
 
           <div class="execPrimary">
-            <div class="label">تحقق از شهریور</div>
+            <div class="label">تحقق هدف جدید از شهریور</div>
             <div class="value">${fmt(d.newPct)}%</div>
             <div class="sub">${d.newContracts.toLocaleString('fa-IR')} / ${d.newTarget.toLocaleString('fa-IR')} قرارداد</div>
           </div>
@@ -805,21 +890,25 @@ function renderExecutives(){
         </div>
 
         <div class="execCompare">
-          <span>نسبت به میانگین مدیران اجرایی</span>
+          <span>نسبت به میانگین ${mode==='new'?'هدف جدید':'هدف کل'} مدیران اجرایی</span>
           <b class="${vsAvg>3?'up':vsAvg<-3?'down':'flat'}">${vsText}</b>
         </div>
       </article>`;
   }).join('');
 
-  const bestYtd=[...execs].sort((a,b)=>b.ytdPct-a.ytdPct)[0];
+  const bestTotal=[...execs].sort((a,b)=>b.totalPct-a.totalPct)[0];
   const bestNew=[...execs].sort((a,b)=>b.newPct-a.newPct)[0];
   const bestOpen=[...execs].sort((a,b)=>b.totalOpened-a.totalOpened)[0];
   const bestGap=[...execs].sort((a,b)=>a.gap-b.gap)[0];
 
-  document.getElementById('execChampionName').textContent=bestYtd.name;
-  document.getElementById('execChampionScore').textContent=fmt(bestYtd.ytdPct)+'%';
+  const champion=execs[0];
+  document.getElementById('execChampionName').textContent=champion.name;
+  document.getElementById('execChampionScore').textContent=
+    mode==='opened'?fmt(champion.totalOpened)+' افتتاح':
+    mode==='gap'?fmt(champion.gap)+' مانده':
+    fmt(selectedPct(champion))+'%';
 
-  document.getElementById('execBestYtd').textContent=`${bestYtd.name} · ${fmt(bestYtd.ytdPct)}%`;
+  document.getElementById('execBestTotal').textContent=`${bestTotal.name} · ${fmt(bestTotal.totalPct)}%`;
   document.getElementById('execBestNew').textContent=`${bestNew.name} · ${fmt(bestNew.newPct)}%`;
   document.getElementById('execBestOpen').textContent=`${bestOpen.name} · ${bestOpen.totalOpened.toLocaleString('fa-IR')}`;
   document.getElementById('execBestGap').textContent=`${bestGap.name} · ${bestGap.gap.toLocaleString('fa-IR')}`;
@@ -827,24 +916,26 @@ function renderExecutives(){
 
 function render(){
   renderExecutives();
-  const ytdTarget=sum(DATA,'ytdTarget'),totalContracts=sum(DATA,'totalContracts');
+  const totalTarget=sum(DATA,'totalTarget'),totalContracts=sum(DATA,'totalContracts');
   const newTarget=sum(DATA,'newTarget'),newContracts=sum(DATA,'newContracts');
-  const ytd=ytdTarget?totalContracts/ytdTarget*100:0;
+  const total=totalTarget?totalContracts/totalTarget*100:0;
   const np=newTarget?newContracts/newTarget*100:0;
 
-  ytdPct.textContent=fmt(ytd)+'%';
-  ytdSub.textContent=`${totalContracts.toLocaleString('fa-IR')} قرارداد از هدف ${ytdTarget.toLocaleString('fa-IR')}`;
+  totalPct.textContent=fmt(total)+'%';
+  totalSub.textContent=`${totalContracts.toLocaleString('fa-IR')} قرارداد از هدف ${totalTarget.toLocaleString('fa-IR')}`;
   newPct.textContent=fmt(np)+'%';
   newSub.textContent=`${newContracts.toLocaleString('fa-IR')} قرارداد از هدف ${newTarget.toLocaleString('fa-IR')}`;
-  contractsVsTarget.textContent=`${totalContracts.toLocaleString('fa-IR')} / ${ytdTarget.toLocaleString('fa-IR')}`;
-  contractsVsTargetSub.textContent=`تحقق ${fmt(ytd)}% از هدف کل قرارداد`;
+  contractsVsTarget.textContent=`${totalContracts.toLocaleString('fa-IR')} / ${totalTarget.toLocaleString('fa-IR')}`;
+  contractsVsTargetSub.textContent=`تحقق ${fmt(total)}% از هدف کل قرارداد`;
   openTotal.textContent=sum(DATA,'totalOpened').toLocaleString('fa-IR');
-  criticalCount.textContent=DATA.filter(d=>d.ytdPct<40).length.toLocaleString('fa-IR');
+  criticalCount.textContent=DATA.filter(d=>(sortFilter.value==='new'?d.newPct:d.totalPct)<40).length.toLocaleString('fa-IR');
 
   const ranked=[...DATA];
   list.innerHTML=ranked.map((d,i)=>{
     const rank=i+1;
-    const s=color(d.ytdPct);
+    const mode=sortFilter.value;
+    const selectedPct=mode==='new'?d.newPct:d.totalPct;
+    const s=color(selectedPct);
     const accent=accentByRank(rank,ranked.length);
 
     return `
@@ -860,24 +951,24 @@ function render(){
           <div class="name">${d.name}</div>
           <div class="exec">مدیر اجرایی: ${d.exec}</div>
           <div class="statusLine">
-            <span class="tag status">${label(d.ytdPct)}</span>
-            <span class="tag accent">رتبه عملکرد</span>
-            <span class="tag newTag">شاخص شهریور</span>
+            <span class="tag status">${label(selectedPct)}</span>
+            <span class="tag accent">${mode==='new'?'رتبه بر اساس هدف جدید':'رتبه عملکرد'}</span>
+            <span class="tag newTag">هدف جدید از شهریور</span>
             <span class="tag">کل قرارداد ${d.totalContracts.toLocaleString('fa-IR')}</span>
             <span class="tag">ستادی ${d.totalHQ.toLocaleString('fa-IR')}</span>
             <span class="tag">فرانچایز ${d.totalFran.toLocaleString('fa-IR')}</span>
           </div>
         </div>
 
-        <div class="metric mainMetric ytdMetric">
-          <div class="metricLabel">تحقق کل هدف</div>
-          <div class="metricValue primary">${fmt(d.ytdPct)}%</div>
-          <div class="metricSub">${d.totalContracts.toLocaleString('fa-IR')} / ${d.ytdTarget.toLocaleString('fa-IR')} قرارداد</div>
-          <div class="progress"><div class="progressFill" style="width:${Math.min(d.ytdPct,100)}%"></div></div>
+        <div class="metric mainMetric totalMetric ${mode==='total'?'isRankMetric':''}">
+          <div class="metricLabel">تحقق هدف کل${mode==='total'?' · مبنای رتبه‌بندی':''}</div>
+          <div class="metricValue primary">${fmt(d.totalPct)}%</div>
+          <div class="metricSub">${d.totalContracts.toLocaleString('fa-IR')} / ${d.totalTarget.toLocaleString('fa-IR')} قرارداد</div>
+          <div class="progress"><div class="progressFill" style="width:${Math.min(d.totalPct,100)}%"></div></div>
         </div>
 
-        <div class="metric newMetric">
-          <div class="metricLabel">تحقق هدف از شهریور</div>
+        <div class="metric newMetric ${mode==='new'?'isRankMetric':''}">
+          <div class="metricLabel">تحقق هدف جدید از شهریور${mode==='new'?' · مبنای رتبه‌بندی':''}</div>
           <div class="metricValue">${fmt(d.newPct)}%</div>
           <div class="metricSub">${d.newContracts.toLocaleString('fa-IR')} / ${d.newTarget.toLocaleString('fa-IR')} قرارداد</div>
           <div class="progress"><div class="progressFill new" style="width:${Math.min(d.newPct,100)}%"></div></div>
