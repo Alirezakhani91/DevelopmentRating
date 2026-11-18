@@ -1,0 +1,406 @@
+{
+  "success": true,
+  "source": "initial published CSV snapshot",
+  "updatedAt": "2026-11-18T12:52:07.442736+00:00",
+  "data": [
+    {
+      "name": "اتحاد مصطفی",
+      "exec": "حسینی نسب عماد",
+      "target": 32,
+      "hq": 19,
+      "fr": 5,
+      "contracts": 24,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 5,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "بهنان مسعود",
+      "exec": "محالی میثم",
+      "target": 27,
+      "hq": 14,
+      "fr": 3,
+      "contracts": 17,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 1,
+      "negotiating": 3,
+      "properties": [
+        "رودکی",
+        "میدان آزادی",
+        "شمس آبادی"
+      ]
+    },
+    {
+      "name": "بهادری مرتضی",
+      "exec": "حسینی نسب عماد",
+      "target": 34,
+      "hq": 13,
+      "fr": 8,
+      "contracts": 21,
+      "newHQ": 0,
+      "newFr": 1,
+      "completing": 5,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "اثنی عشری حسین",
+      "exec": "حسینی نسب عماد",
+      "target": 24,
+      "hq": 2,
+      "fr": 12,
+      "contracts": 14,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 1,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "مرزبان یزدان",
+      "exec": "محسنی مجید",
+      "target": 29,
+      "hq": 6,
+      "fr": 9,
+      "contracts": 15,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 11,
+      "negotiating": 1,
+      "properties": [
+        "خ شاهد"
+      ]
+    },
+    {
+      "name": "حسن زاده سید امین",
+      "exec": "حسینی نسب عماد",
+      "target": 30,
+      "hq": 10,
+      "fr": 5,
+      "contracts": 15,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 3,
+      "negotiating": 1,
+      "properties": [
+        "کله رود"
+      ]
+    },
+    {
+      "name": "جعفری رضا",
+      "exec": "نوری فرید",
+      "target": 36,
+      "hq": 17,
+      "fr": 1,
+      "contracts": 18,
+      "newHQ": 1,
+      "newFr": 0,
+      "completing": 4,
+      "negotiating": 5,
+      "properties": [
+        "شیخ هادی",
+        "هلال احمر",
+        "17 شهریور",
+        "میدان هلال احمر",
+        "گلشن دوست"
+      ]
+    },
+    {
+      "name": "کلالی مهیار",
+      "exec": "محالی میثم",
+      "target": 45,
+      "hq": 14,
+      "fr": 7,
+      "contracts": 21,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 2,
+      "negotiating": 4,
+      "properties": [
+        "احمدآباد",
+        "خاقانی",
+        "عبادی",
+        "پیروزی"
+      ]
+    },
+    {
+      "name": "یزد",
+      "exec": "حسینی نسب عماد",
+      "target": 15,
+      "hq": 7,
+      "fr": 0,
+      "contracts": 7,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 0,
+      "negotiating": 1,
+      "properties": [
+        "میدان حج"
+      ]
+    },
+    {
+      "name": "منجزی وند رضا",
+      "exec": "محالی میثم",
+      "target": 22,
+      "hq": 9,
+      "fr": 1,
+      "contracts": 10,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 1,
+      "negotiating": 4,
+      "properties": [
+        "ملک شهر",
+        "علامه",
+        "چهار راه فرسان",
+        "24 متری"
+      ]
+    },
+    {
+      "name": "فارسی علی",
+      "exec": "محسنی مجید",
+      "target": 18,
+      "hq": 1,
+      "fr": 7,
+      "contracts": 8,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 2,
+      "negotiating": 3,
+      "properties": [
+        "علوی",
+        "امام خمینی",
+        "الیگودرز مدرس"
+      ]
+    },
+    {
+      "name": "علی محمدی ساسان",
+      "exec": "محسنی مجید",
+      "target": 28,
+      "hq": 8,
+      "fr": 4,
+      "contracts": 12,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 4,
+      "negotiating": 1,
+      "properties": [
+        "اهواز"
+      ]
+    },
+    {
+      "name": "جمشیدی محمد",
+      "exec": "نوری فرید",
+      "target": 28,
+      "hq": 12,
+      "fr": 0,
+      "contracts": 12,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 1,
+      "negotiating": 4,
+      "properties": [
+        "شمشیری",
+        "گیشا",
+        "شاه پروری",
+        "دریاچه چیتگر"
+      ]
+    },
+    {
+      "name": "عابد مجتبی",
+      "exec": "حسینی نسب عماد",
+      "target": 35,
+      "hq": 8,
+      "fr": 8,
+      "contracts": 16,
+      "newHQ": 1,
+      "newFr": 0,
+      "completing": 6,
+      "negotiating": 2,
+      "properties": [
+        "خسروی",
+        "بوشهر جمهوری"
+      ]
+    },
+    {
+      "name": "سلمان زاده کیوان",
+      "exec": "نوری فرید",
+      "target": 52,
+      "hq": 17,
+      "fr": 5,
+      "contracts": 22,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 2,
+      "negotiating": 3,
+      "properties": [
+        "شهرک شاهد",
+        "کرج فردوسی",
+        "جاده ملارد"
+      ]
+    },
+    {
+      "name": "دشت افکن مهدی",
+      "exec": "نوری فرید",
+      "target": 45,
+      "hq": 14,
+      "fr": 5,
+      "contracts": 19,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 5,
+      "negotiating": 5,
+      "properties": [
+        "گلستان",
+        "شهرقدس",
+        "مصطفی خمینی",
+        "ولیعصر ساوه",
+        "صالحیه"
+      ]
+    },
+    {
+      "name": "وجدان رضا",
+      "exec": "هم مسلک بهمن",
+      "target": 29,
+      "hq": 7,
+      "fr": 5,
+      "contracts": 12,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 10,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "غرب گیلان",
+      "exec": "هم مسلک بهمن",
+      "target": 15,
+      "hq": 6,
+      "fr": 0,
+      "contracts": 6,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 0,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "پوررجبی امید",
+      "exec": "نوری فرید",
+      "target": 46,
+      "hq": 12,
+      "fr": 5,
+      "contracts": 17,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 2,
+      "negotiating": 3,
+      "properties": [
+        "دولت آباد",
+        "افسریه",
+        "قرچک"
+      ]
+    },
+    {
+      "name": "بختیاریان رضا",
+      "exec": "محسنی مجید",
+      "target": 26,
+      "hq": 3,
+      "fr": 6,
+      "contracts": 9,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 4,
+      "negotiating": 6,
+      "properties": [
+        "بوستان",
+        "کانکس",
+        "گلستان",
+        "کیان آباد 1",
+        "کیان آباد 2",
+        "کیانشهر"
+      ]
+    },
+    {
+      "name": "محجل - مناف‌زاده",
+      "exec": "هم مسلک بهمن",
+      "target": 30,
+      "hq": 6,
+      "fr": 4,
+      "contracts": 10,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 9,
+      "negotiating": 0,
+      "properties": []
+    },
+    {
+      "name": "صادقی سعید",
+      "exec": "هم مسلک بهمن",
+      "target": 32,
+      "hq": 2,
+      "fr": 8,
+      "contracts": 10,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 7,
+      "negotiating": 2,
+      "properties": [
+        "خوی 1",
+        "خوی 2"
+      ]
+    },
+    {
+      "name": "قدرتی میلاد",
+      "exec": "محسنی مجید",
+      "target": 26,
+      "hq": 4,
+      "fr": 4,
+      "contracts": 8,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 5,
+      "negotiating": 3,
+      "properties": [
+        "فرمهین",
+        "خمین",
+        "نواب"
+      ]
+    },
+    {
+      "name": "اسگندری حجت",
+      "exec": "محالی میثم",
+      "target": 42,
+      "hq": 8,
+      "fr": 4,
+      "contracts": 12,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 6,
+      "negotiating": 3,
+      "properties": [
+        "بلوار کشاورز",
+        "شهدا",
+        "شهابی"
+      ]
+    },
+    {
+      "name": "پاشایی بهنام",
+      "exec": "هم مسلک بهمن",
+      "target": 15,
+      "hq": 3,
+      "fr": 1,
+      "contracts": 4,
+      "newHQ": 0,
+      "newFr": 0,
+      "completing": 2,
+      "negotiating": 1,
+      "properties": [
+        "لنگرود"
+      ]
+    }
+  ]
+}
