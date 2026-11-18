@@ -1,1002 +1,147 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Market — Regional Championship</title>
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5.3.0/index.css">
-<style>
-:root{
-  --bg:#070a0f;
-  --panel:#0e141d;
-  --panel2:#121a25;
-  --line:#202c3d;
-  --text:#f8fafc;
-  --muted:#8b9bb0;
-  --green:#00d084;
-  --blue:#4f8ef7;
-  --amber:#ffb020;
-  --red:#ff4d67;
-  --silver:#b8c2cf;
-  --bronze:#b87333;
-  --font:'Vazirmatn Variable','Vazirmatn','Vazir',Tahoma,Arial,sans-serif;
-}
-*{box-sizing:border-box;margin:0;padding:0;font-family:var(--font)!important}
-html,body{background:
-  radial-gradient(1100px 520px at 100% -10%,rgba(0,208,132,.06),transparent 60%),
-  radial-gradient(900px 520px at 0 100%,rgba(79,142,247,.08),transparent 60%),
-  var(--bg);
-  color:var(--text);min-height:100%;
-}
-body{overflow-x:hidden}
-button,input,select{font:inherit}
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daily Market | Regional Championship – آبان</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5.3.0/index.css"><style>
+:root{--bg:#070b11;--panel:#101823;--line:#243247;--txt:#f2f6fc;--mute:#8494a9;--green:#00d084;--blue:#4f8ef7;--gold:#ffbe47;--red:#ff5873}*{box-sizing:border-box}body{margin:0;background:radial-gradient(70vw 40vw at 90% -10%,#12302855,transparent),radial-gradient(60vw 40vw at 0 60%,#14264244,transparent),var(--bg);color:var(--txt);font-family:'Vazirmatn Variable',Tahoma,sans-serif}.app{max-width:1800px;margin:auto;padding:18px}.header{display:flex;justify-content:space-between;gap:15px;align-items:center;border:1px solid var(--line);border-radius:19px;background:#0c131de8;padding:16px 20px;margin-bottom:14px;position:sticky;top:8px;z-index:10;backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:13px}.logo{display:grid;place-items:center;width:49px;height:49px;border-radius:14px;background:linear-gradient(135deg,#00a978,#3b82f6);font-size:26px}.brand b{font-size:23px}.sub{font-size:11px;color:var(--mute)}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pill,button,select,input{border:1px solid #26364c;border-radius:10px;background:#152131;color:#dce6f3;padding:10px 12px;font-family:inherit}.pill{font-size:11px}.pill.live{color:#5ae9aa;border-color:#1d594a}button{cursor:pointer;font-weight:850}button:hover{border-color:#679bf6}.intro{padding:12px 6px 16px}.eyebrow{font-size:11px;color:#6de6ae;letter-spacing:2px;font-weight:900}.intro h1{margin:3px 0;font-size:26px}.intro p{margin:5px 0;color:#8da0b5;font-size:12px}.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:13px}.kpi{background:linear-gradient(145deg,#131e2b,#0c131c);border:1px solid #253348;border-radius:16px;padding:15px;min-height:106px;position:relative;overflow:hidden}.kpi:before{content:'';height:3px;position:absolute;top:0;right:0;left:0;background:var(--accent,#4f8ef7)}.kpi .label{font-size:11px;color:#91a2b8}.kpi strong{font-size:29px;display:block;line-height:1.7}.kpi small{color:#71849b;font-size:10px}.filters{display:flex;gap:9px;flex-wrap:wrap;align-items:center;padding:11px;border:1px solid #233249;background:#0d151f;border-radius:14px;margin-bottom:13px}.filters input{flex:2;min-width:200px}.filters select{flex:1;min-width:160px}.filters span{color:#91a4ba;font-size:11px}.arena{border:1px solid #25354c;border-radius:23px;padding:18px;margin-bottom:13px;background:radial-gradient(500px 160px at 50% 0,#1e395044,transparent),linear-gradient(140deg,#111a25,#080f17)}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.sectionhead h2{font-size:20px;margin:0}.sectionhead .sub{margin-top:3px}.exec-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}.exec-card{border:1px solid color-mix(in srgb,var(--c) 45%,#2a3443);border-radius:17px;padding:15px;background:radial-gradient(220px 100px at 110% -10%,color-mix(in srgb,var(--c) 15%,transparent),transparent),#111b27;position:relative}.exec-card:first-child{box-shadow:0 0 30px #ffbd2520}.exec-top{display:flex;justify-content:space-between;gap:5px;align-items:center}.num{background:var(--c);color:#081019;padding:3px 10px;font-size:13px;border-radius:9px;font-weight:900}.exec-card h3{font-size:17px;margin:11px 0 4px}.score{font-size:29px;font-weight:950;color:var(--c)}.track{height:6px;border-radius:20px;background:#293446;overflow:hidden;margin:9px 0}.track>div{height:100%;background:var(--c)}.exec-foot{display:flex;justify-content:space-between;gap:8px;color:#93a4b7;font-size:10px;border-top:1px solid #26334a;padding-top:10px;margin-top:13px;flex-wrap:wrap}.exec-foot b{color:#e6f0ff;font-size:12px}.list{display:grid;gap:10px}.region{--c:#4f8ef7;display:grid;grid-template-columns:64px minmax(185px,1.35fr) minmax(150px,1fr) minmax(155px,1fr) minmax(130px,.75fr) minmax(140px,.85fr) minmax(230px,1.5fr);gap:10px;align-items:stretch;border:1px solid color-mix(in srgb,var(--c) 27%,#253447);border-right:5px solid var(--c);border-radius:17px;padding:13px;background:radial-gradient(480px 160px at 100% -40%,color-mix(in srgb,var(--c) 14%,transparent),transparent),#111a25;transition:transform .15s}.region:hover{transform:translateY(-2px)}.rank{display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:950;border-radius:12px;background:color-mix(in srgb,var(--c) 18%,#111925);color:var(--c)}.identity{display:flex;flex-direction:column;justify-content:center;min-width:0}.identity h3{font-size:20px;margin:0 0 5px;overflow-wrap:anywhere}.identity p{font-size:11px;color:#90a1b5;margin:0}.tag{display:inline-flex;align-self:flex-start;background:color-mix(in srgb,var(--c) 12%,#131d29);border:1px solid color-mix(in srgb,var(--c) 35%,#2b384b);color:var(--c);font-size:10px;padding:4px 9px;border-radius:20px;margin-top:11px}.tile{border:1px solid #27374b;background:#0d1621bb;border-radius:12px;padding:11px;min-width:0}.tile .label{font-size:11px;color:#8ca0b4}.tile strong{font-size:26px;line-height:1.6;display:block}.tile small{font-size:10px;color:#8a9db1}.tile.performance strong{color:var(--c)}.tile.flow{border-color:#3d3d2a;background:linear-gradient(145deg,#24221a77,#121920)}.tile.flow strong{color:#ffcc69}.tile.pipeline{border-color:#1d4c54;background:linear-gradient(145deg,#132c33,#111a25)}.tile.pipeline strong{color:#5dcce1}.flow-tiny{display:flex;gap:7px;flex-wrap:wrap}.flow-tiny span{font-size:10px;background:#243244;padding:3px 7px;border-radius:6px}.property{font-size:10px;display:inline-flex;border-radius:7px;padding:4px 7px;background:#173440;border:1px solid #265161;color:#b3e6f1;margin:4px 4px 0 0}.muted{color:#73869c;font-size:11px}.disclaimer{font-size:11px;color:#9baab9;margin:12px 3px;line-height:1.9}.error{color:#ff8293}.hidden{display:none!important}@media(max-width:1450px){.region{grid-template-columns:60px minmax(150px,1.2fr) repeat(3,minmax(135px,.85fr));}.tile.pipeline{grid-column:2/-1}.exec-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:1000px){.kpis{grid-template-columns:repeat(3,1fr)}.exec-grid{grid-template-columns:repeat(2,1fr)}.region{grid-template-columns:65px 1fr 1fr}.identity{grid-column:2/-1}.tile.pipeline{grid-column:1/-1}}@media(max-width:640px){.app{padding:9px}.header{position:relative;flex-direction:column;align-items:stretch}.brand b{font-size:17px}.intro h1{font-size:20px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi strong{font-size:24px}.exec-grid{grid-template-columns:1fr}.region{grid-template-columns:58px 1fr 1fr;padding:9px;gap:6px}.identity{grid-column:2/-1}.tile{padding:9px}.tile strong{font-size:21px}.tile.pipeline{grid-column:1/-1}.tile.flow{grid-column:1/-1}.identity h3{font-size:17px}.sectionhead h2{font-size:16px}}
 
-.app{
-  width:min(1880px,100%);
-  margin:0 auto;
-  padding:16px 18px 30px;
-}
+/* Readability and independently presented indicators — v2 */
+body{font-size:15px;line-height:1.65}
+.brand b{font-size:25px}.sub{font-size:13px;line-height:1.75}
+.pill,button,select,input{font-size:14px}.intro h1{font-size:30px}.intro p{font-size:15px}
+.kpi{min-height:125px;padding:16px}.kpi .label{font-size:14px}.kpi strong{font-size:34px}.kpi small{font-size:12px}
+.filters span{font-size:13px}.sectionhead h2{font-size:23px}
+.exec-card h3{font-size:20px}.score{font-size:35px}.exec-foot{font-size:13px}.exec-foot b{font-size:15px}
+.region{padding:15px;gap:9px;min-height:158px}
+.rank{font-size:32px}.identity h3{font-size:23px}.identity p{font-size:14px}.tag{font-size:12px}
+.tile{padding:13px 11px}.tile .label{font-size:13px;line-height:1.5;font-weight:750}
+.tile strong{font-size:32px;line-height:1.4}.tile small{font-size:12px;line-height:1.6;display:block}
+.flow-tiny span{font-size:12px}.property{font-size:13px;padding:6px 9px;line-height:1.5}
+.muted{font-size:12px}.disclaimer{font-size:13px}
+.tile.remaining{background:linear-gradient(145deg,#2b1b2577,#151923);border-color:#604352}
+.tile.remaining strong{color:#ff8b9f}.tile.flow strong{color:#ffcc69}
+@media(max-width:1600px){.region{grid-template-columns:65px minmax(190px,1.3fr) repeat(4,minmax(135px,1fr));}.tile.pipeline{grid-column:2/-1}}
+@media(max-width:1050px){.region{grid-template-columns:65px repeat(3,minmax(0,1fr))}.identity{grid-column:2/-1}.tile.pipeline{grid-column:1/-1}}
+@media(max-width:680px){.app{padding:10px}.brand b{font-size:18px}.intro h1{font-size:23px}.intro p{font-size:13px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi strong{font-size:28px}.exec-grid{grid-template-columns:1fr}.region{grid-template-columns:55px repeat(2,minmax(0,1fr));gap:8px;padding:10px}.identity{grid-column:2/-1}.rank{font-size:26px}.identity h3{font-size:19px}.tile{padding:11px}.tile strong{font-size:25px}.tile .label{font-size:12px}.tile small{font-size:11px}.tile.pipeline{grid-column:1/-1}.tile.flow{grid-column:auto}.sectionhead h2{font-size:18px}.property{font-size:12px}}
 
-.header{
-  position:sticky;top:0;z-index:30;
-  display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:14px 16px;margin-bottom:12px;
-  border:1px solid rgba(255,255,255,.055);border-radius:18px;
-  background:rgba(8,12,18,.93);backdrop-filter:blur(14px);
-  box-shadow:0 16px 50px rgba(0,0,0,.25)
-}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}
-.logo{
-  width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:23px;
-  background:linear-gradient(135deg,#0ca678,#2563eb 68%,#7c3aed);
-  box-shadow:0 10px 28px rgba(37,99,235,.20)
-}
-.brandTitle{font-size:25px;font-weight:950;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.brandSub{font-size:12px;color:#8292a8;margin-top:3px}
-.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.badge,.btn{
-  border:1px solid #24334a;background:#111a27;color:#d3dce8;border-radius:10px;
-  padding:9px 12px;font-size:12px
-}
-.live{color:#38e8a0;border-color:rgba(0,208,132,.24);background:rgba(0,208,132,.07)}
-.btn{cursor:pointer;font-weight:900}
-.btn:hover{border-color:#4f8ef7;color:#9fc0ff}
+/* V3 — MAX READABILITY / LARGE DISPLAY */
+body{font-size:20px;line-height:1.7}.app{max-width:2200px;padding:24px}
+.header{padding:21px 24px}.brand b{font-size:34px}.logo{width:66px;height:66px;font-size:35px}
+.sub,.pill,button,select,input{font-size:18px}.pill,button,select,input{padding:14px 16px}
+.intro h1{font-size:40px}.intro p{font-size:20px}.eyebrow{font-size:16px}
+.kpis{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.kpi{min-height:165px;padding:22px}
+.kpi .label{font-size:20px;font-weight:800}.kpi strong{font-size:51px;line-height:1.5}.kpi small{font-size:16px}
+.filters{padding:16px;gap:12px}.filters span{font-size:18px}.sectionhead h2{font-size:32px}
+.exec-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}.exec-card{padding:20px}
+.exec-card h3{font-size:26px;line-height:1.4}.exec-card .sub{font-size:16px}.num{font-size:19px;padding:5px 13px}
+.score{font-size:45px}.exec-foot{font-size:15px}.exec-foot b{font-size:20px}
+.list{gap:14px}.region{grid-template-columns:90px minmax(245px,1.25fr) repeat(4,minmax(185px,1fr));gap:13px;padding:19px;min-height:230px}
+.rank{font-size:44px}.identity h3{font-size:32px;line-height:1.45}.identity p{font-size:19px}.tag{font-size:17px;padding:8px 13px}
+.tile{padding:17px 16px;min-width:0}.tile .label{font-size:19px;line-height:1.5;font-weight:850}.tile strong{font-size:48px;line-height:1.45}
+.tile small{font-size:16px;line-height:1.65}.flow-tiny span{font-size:16px;padding:6px 8px}
+.tile.pipeline{grid-column:2/-1}.property{font-size:19px;padding:8px 12px;margin:5px}.muted{font-size:16px}
+.disclaimer{font-size:17px}.connection-panel{background:#101d2b;border:1px solid #325576;border-radius:15px;padding:16px 18px;margin:0 0 15px}
+.connection-panel summary{font-size:19px;font-weight:850;cursor:pointer}.connection-panel p{font-size:16px;color:#afc1d5}
+.connection-row{display:flex;gap:10px;flex-wrap:wrap}.connection-row input{flex:1;min-width:280px;direction:ltr;text-align:left}.connection-row button{white-space:nowrap}
+.connection-panel small{font-size:15px;color:#93a9c3;display:block;margin-top:8px}
+@media(max-width:1750px){.region{grid-template-columns:75px minmax(200px,1.15fr) repeat(3,minmax(175px,1fr))}.region .tile.flow{grid-column:3/5}.region .tile.pipeline{grid-column:2/-1}.exec-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1250px){.region{grid-template-columns:75px repeat(3,minmax(0,1fr))}.identity{grid-column:2/-1}.region .tile.flow{grid-column:auto}.region .tile.pipeline{grid-column:1/-1}.exec-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.app{padding:12px}.header{position:relative;flex-direction:column;align-items:stretch;padding:16px}.brand b{font-size:23px}.sub{font-size:15px}.intro h1{font-size:28px}.intro p{font-size:16px}
+.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{min-height:130px;padding:14px}.kpi .label{font-size:17px}.kpi strong{font-size:35px}.kpi small{font-size:14px}
+.exec-grid{grid-template-columns:1fr}.sectionhead h2{font-size:26px}.region{grid-template-columns:64px repeat(2,minmax(0,1fr));padding:12px;gap:9px}
+.identity{grid-column:2/-1}.rank{font-size:32px}.identity h3{font-size:25px}.identity p{font-size:17px}
+.tile{padding:12px}.tile strong{font-size:36px}.tile .label{font-size:17px}.tile small{font-size:14px}
+.region .tile.flow{grid-column:auto}.region .tile.pipeline{grid-column:1/-1}.property{font-size:17px}
+.connection-row input{min-width:0;width:100%}}
+@media(max-width:420px){.kpis{grid-template-columns:1fr 1fr}.region{grid-template-columns:52px 1fr 1fr}.tile strong{font-size:31px}.tile .label{font-size:15px}.brand b{font-size:20px}}
 
-.hero{
-  display:grid;grid-template-columns:1.2fr repeat(5,1fr);gap:10px;
-  margin-bottom:12px
+/* V6 — wide one-row desktop overview, typography unchanged */
+@media (min-width: 1301px){
+  .kpis{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;min-width:0}
+  .kpi{min-width:0;padding:20px 14px}
+  .kpi .label{overflow-wrap:anywhere}
+  .kpi strong{white-space:nowrap;font-variant-numeric:tabular-nums}
+  .region{grid-template-columns:72px minmax(190px,1.15fr) repeat(4,minmax(142px,1fr)) minmax(225px,1.3fr);gap:10px;padding:14px;align-items:stretch}
+  .region .identity,.region .tile.flow,.region .tile.pipeline{grid-column:auto}
+  .region .tile{padding:13px}
 }
-.heroMain,.heroKpi{
-  position:relative;overflow:hidden;
-  min-height:116px;
-  border:1px solid rgba(255,255,255,.055);border-radius:17px;
-  background:linear-gradient(145deg,#0d141e,#0a0f17);
-  padding:15px 16px
-}
-.heroMain{
-  background:
-    radial-gradient(520px 180px at 100% -20%,rgba(0,208,132,.10),transparent 60%),
-    linear-gradient(145deg,#0d141e,#0a0f17)
-}
-.heroMain:before{content:"";position:absolute;right:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--green),var(--blue))}
-.heroKpi:before{content:"";position:absolute;right:0;top:0;width:100%;height:3px;background:var(--c)}
-.eyebrow{font-size:11px;color:#34d399;font-weight:900;letter-spacing:.08em}
-.heroTitle{font-size:22px;font-weight:950;margin-top:5px}
-.heroText{font-size:11px;color:#78899f;line-height:1.7;margin-top:4px}
-.kLabel{font-size:11px;color:#7f90a6}
-.kVal{font-size:36px;font-weight:950;margin-top:8px;line-height:1}
-.kSub{font-size:10px;color:#63748a;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-
-.controls{
-  display:grid;grid-template-columns:minmax(230px,1.3fr) repeat(3,minmax(150px,.7fr)) auto auto;
-  gap:8px;margin-bottom:12px;padding:9px;
-  background:#0b1119;border:1px solid #1b2738;border-radius:13px
-}
-.controls input,.controls select,.controls button{
-  width:100%;border:1px solid #223149;background:#111a27;color:#e2e8f0;
-  border-radius:9px;padding:11px 12px;font-size:12px;outline:none
-}
-.controls button{cursor:pointer;font-weight:900}
-.count{display:flex;align-items:center;justify-content:center;color:#93a4b8}
-
-
-.executiveArena{
-  position:relative;overflow:hidden;
-  margin-bottom:14px;
-  border:1px solid rgba(255,255,255,.075);
-  border-radius:24px;
-  background:
-    linear-gradient(135deg,rgba(10,16,25,.96),rgba(6,10,16,.98));
-  box-shadow:
-    0 28px 80px rgba(0,0,0,.36),
-    inset 0 1px 0 rgba(255,255,255,.035);
-}
-.execArenaBg{
-  position:absolute;inset:0;pointer-events:none;opacity:.9;
-  background:
-    radial-gradient(700px 260px at 50% -10%,rgba(79,142,247,.12),transparent 60%),
-    radial-gradient(560px 260px at 10% 100%,rgba(0,208,132,.08),transparent 62%),
-    linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.035) 50%,transparent 50.2%);
-}
-.executiveArena:before{
-  content:"";position:absolute;top:0;left:7%;right:7%;height:3px;
-  background:linear-gradient(90deg,transparent,#38bdf8,#8b5cf6,#00d084,transparent);
-  filter:drop-shadow(0 0 10px rgba(56,189,248,.35));
-}
-.execArenaHead{
-  position:relative;z-index:2;
-  display:flex;align-items:center;justify-content:space-between;gap:18px;
-  padding:18px 20px 12px
-}
-.execKicker{
-  font-size:12px;font-weight:950;letter-spacing:.14em;
-  color:#7dd3fc
-}
-.execArenaTitle{
-  font-size:28px;font-weight:950;margin-top:3px;
-  letter-spacing:-.025em
-}
-.execArenaSub{
-  font-size:12px;color:#7f90a6;line-height:1.8;margin-top:4px
-}
-.execChampionCallout{
-  min-width:330px;
-  display:grid;grid-template-columns:42px 1fr auto;gap:10px;align-items:center;
-  padding:10px 12px;border-radius:16px;
-  border:1px solid rgba(255,176,32,.20);
-  background:
-    radial-gradient(180px 80px at 90% 0%,rgba(255,176,32,.12),transparent 65%),
-    rgba(255,255,255,.025);
-}
-.execChampionIcon{
-  width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
-  color:#111;font-size:20px;
-  background:linear-gradient(135deg,#ffe17b,#ffad16);
-  box-shadow:0 8px 22px rgba(255,176,32,.16)
-}
-.execChampionCallout span{
-  display:block;font-size:9px;color:#a3916a;letter-spacing:.08em
-}
-.execChampionCallout strong{
-  display:block;font-size:15px;margin-top:2px
-}
-.execChampionCallout>b{
-  font-size:28px;color:#ffcf5c;white-space:nowrap
+@media (min-width: 761px) and (max-width: 1300px){
+  .kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
-.execTrack{
-  position:relative;z-index:2;padding:4px 18px 12px
+/* V7: non-sticky header and strictly single-row executive arena */
+.header{position:static!important;top:auto!important;backdrop-filter:none!important}
+.exec-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:13px;overflow-x:auto;overscroll-behavior-x:contain;padding-bottom:12px}
+.exec-card{min-width:0}
+@media(min-width:1450px){.exec-grid{overflow-x:visible}.exec-card h3{font-size:clamp(19px,1.35vw,26px)}}
+@media(min-width:761px) and (max-width:1449px){.exec-grid{grid-template-columns:repeat(5,minmax(245px,1fr))!important}.exec-card{min-width:245px}}
+@media(max-width:760px){.exec-grid{grid-template-columns:repeat(5,minmax(240px,1fr))!important}.exec-card{min-width:240px}}
+.connection-alert{margin-top:10px;background:#281b25;border:1px solid #a44b64;color:#ffd6df;border-radius:12px;padding:12px 15px;font-size:16px;line-height:1.8}
+.connection-alert a{color:#98c7ff}
+</style></head><body><main class="app"><header class="header"><div class="brand"><span class="logo">🏁</span><div><b>Daily Market — Regional Championship</b><div class="sub">داشبورد مقایسه عملکرد توسعه مناطق · گزارش اهداف آبان</div></div></div><div class="actions"><span class="pill" id="sync">در حال بررسی اتصال</span><span class="pill" id="updated">—</span><button onclick="refresh()">↻ بروزرسانی از شیت</button></div></header><section class="intro"><div class="eyebrow">CEO PERFORMANCE COMMAND CENTER</div><h1>قهرمانی عملکرد مناطق | توسعه فروشگاه</h1><p>تمام وضعیت هر منطقه، از تحقق قطعی هدف تا فرانچایزهای در حال تکمیل و ملک‌های در مذاکره، در یک نگاه</p></section><section id="kpis" class="kpis"></section><div class="filters"><input id="q" placeholder="جستجوی منطقه، مدیر اجرایی یا نام ملک..." oninput="render()"><select id="ex" onchange="render()"><option value="">همه مدیران اجرایی</option></select><select id="sort" onchange="render()"><option value="pct">رتبه‌بندی: درصد تحقق هدف</option><option value="contracts">بیشترین قرارداد قطعی</option><option value="gap">کمترین مانده هدف</option><option value="completing">بیشترین فرانچایز در حال تکمیل</option><option value="negotiating">بیشترین املاک در حال مذاکره</option></select><select id="risk" onchange="render()"><option value="">همه سطوح عملکرد</option><option value="high">تحقق ≥ ۵۰٪</option><option value="mid">تحقق ۳۵ تا ۵۰٪</option><option value="low">تحقق کمتر از ۳۵٪</option></select><button onclick="resetFilters()">پاک‌کردن فیلترها</button><span id="count"></span></div><section class="arena"><div class="sectionhead"><div><h2>EXECUTIVE COMMAND ARENA | مدیران اجرایی</h2><div class="sub">تجمیع قطعی قراردادها، در جریان تکمیل و در مذاکره به تفکیک مدیر</div></div><span class="pill">رتبه: تحقق وزنی هدف</span></div><div class="exec-grid" id="execs"></div></section><section class="arena"><div class="sectionhead"><div><h2>REGIONAL STANDINGS | جدول مناطق</h2><div class="sub">یک کارت یکپارچه برای هر منطقه؛ اقلام غیرقطعی در تحقق هدف محاسبه نمی‌شوند</div></div><span class="pill" id="regionCount"></span></div><div class="list" id="regions"></div></section><p class="disclaimer">روش محاسبه: تحقق = تعداد قراردادهای قطعی ÷ هدف سال. قراردادهای جدید صرفاً به‌عنوان زیرمجموعه ثبت‌شده نمایش داده می‌شوند و دوباره به کل قرارداد اضافه نمی‌شوند. فرانچایز در حال تکمیل و املاک در مذاکره نیز فقط وضعیت جریان کارند و هیچ اثری در تحقق یا مانده هدف ندارند. نام املاک از ستون‌های پس از «در حال مذاکره» استخراج می‌شود. داشبورد مستقیماً از طریق سرویس داخلی Google Apps Script به شیت متصل است. در صورت خطا، داده‌های نمونه با برچسب آفلاین نمایش داده می‌شوند.</p></main><script>
+const FALLBACK=[{"name":"اتحاد مصطفی","exec":"حسینی نسب عماد","target":32.0,"hq":19.0,"fr":5.0,"contracts":24.0,"newHQ":0.0,"newFr":0.0,"completing":5.0,"negotiating":0.0,"properties":[]},{"name":"بهنان مسعود","exec":"محالی میثم","target":27.0,"hq":14.0,"fr":3.0,"contracts":17.0,"newHQ":0.0,"newFr":0.0,"completing":1.0,"negotiating":0.0,"properties":[]},{"name":"بهادری مرتضی","exec":"حسینی نسب عماد","target":34.0,"hq":13.0,"fr":8.0,"contracts":21.0,"newHQ":0.0,"newFr":1.0,"completing":5.0,"negotiating":0.0,"properties":[]},{"name":"اثنی عشری حسین","exec":"حسینی نسب عماد","target":24.0,"hq":2.0,"fr":12.0,"contracts":14.0,"newHQ":0.0,"newFr":0.0,"completing":1.0,"negotiating":0.0,"properties":[]},{"name":"مرزبان یزدان","exec":"محسنی مجید","target":29.0,"hq":6.0,"fr":9.0,"contracts":15.0,"newHQ":0.0,"newFr":0.0,"completing":11.0,"negotiating":0.0,"properties":[]},{"name":"حسن زاده سید امین","exec":"حسینی نسب عماد","target":30.0,"hq":10.0,"fr":5.0,"contracts":15.0,"newHQ":0.0,"newFr":0.0,"completing":3.0,"negotiating":1.0,"properties":["کله رود"]},{"name":"جعفری رضا","exec":"نوری فرید","target":36.0,"hq":17.0,"fr":1.0,"contracts":18.0,"newHQ":1.0,"newFr":0.0,"completing":4.0,"negotiating":5.0,"properties":["شیخ هادی","هلال احمر","17 شهریور","میدان هلال احمر","گلشن دوست"]},{"name":"کلالی مهیار","exec":"محالی میثم","target":45.0,"hq":14.0,"fr":7.0,"contracts":21.0,"newHQ":0.0,"newFr":0.0,"completing":2.0,"negotiating":4.0,"properties":["احمدآباد","خاقانی","عبادی","پیروزی"]},{"name":"یزد","exec":"حسینی نسب عماد","target":15.0,"hq":7.0,"fr":0.0,"contracts":7.0,"newHQ":0.0,"newFr":0.0,"completing":0.0,"negotiating":1.0,"properties":["میدان حج"]},{"name":"منجزی وند رضا","exec":"محالی میثم","target":22.0,"hq":9.0,"fr":1.0,"contracts":10.0,"newHQ":0.0,"newFr":0.0,"completing":1.0,"negotiating":4.0,"properties":["ملک شهر","علامه","چهار راه فرسان","24 متری"]},{"name":"فارسی علی","exec":"محسنی مجید","target":18.0,"hq":1.0,"fr":7.0,"contracts":8.0,"newHQ":0.0,"newFr":0.0,"completing":2.0,"negotiating":3.0,"properties":["علوی","امام خمینی","الیگودرز مدرس"]},{"name":"علی محمدی ساسان","exec":"محسنی مجید","target":28.0,"hq":8.0,"fr":4.0,"contracts":12.0,"newHQ":0.0,"newFr":0.0,"completing":4.0,"negotiating":1.0,"properties":["اهواز"]},{"name":"جمشیدی محمد","exec":"نوری فرید","target":28.0,"hq":12.0,"fr":0.0,"contracts":12.0,"newHQ":0.0,"newFr":0.0,"completing":1.0,"negotiating":4.0,"properties":["شمشیری","گیشا","شاه پروری","دریاچه چیتگر"]},{"name":"عابد مجتبی","exec":"حسینی نسب عماد","target":35.0,"hq":8.0,"fr":8.0,"contracts":16.0,"newHQ":1.0,"newFr":0.0,"completing":6.0,"negotiating":2.0,"properties":["خسروی","بوشهر جمهوری"]},{"name":"سلمان زاده کیوان","exec":"نوری فرید","target":52.0,"hq":17.0,"fr":5.0,"contracts":22.0,"newHQ":0.0,"newFr":0.0,"completing":2.0,"negotiating":3.0,"properties":["شهرک شاهد","کرج فردوسی","جاده ملارد"]},{"name":"دشت افکن مهدی","exec":"نوری فرید","target":45.0,"hq":14.0,"fr":5.0,"contracts":19.0,"newHQ":0.0,"newFr":0.0,"completing":5.0,"negotiating":5.0,"properties":["گلستان","شهرقدس","مصطفی خمینی","ولیعصر ساوه","صالحیه"]},{"name":"وجدان رضا","exec":"هم مسلک بهمن","target":29.0,"hq":7.0,"fr":5.0,"contracts":12.0,"newHQ":0.0,"newFr":0.0,"completing":10.0,"negotiating":0.0,"properties":[]},{"name":"غرب گیلان","exec":"هم مسلک بهمن","target":15.0,"hq":6.0,"fr":0.0,"contracts":6.0,"newHQ":0.0,"newFr":0.0,"completing":0.0,"negotiating":0.0,"properties":[]},{"name":"پوررجبی امید","exec":"نوری فرید","target":46.0,"hq":12.0,"fr":5.0,"contracts":17.0,"newHQ":0.0,"newFr":0.0,"completing":2.0,"negotiating":3.0,"properties":["دولت آباد","افسریه","قرچک"]},{"name":"بختیاریان رضا","exec":"محسنی مجید","target":26.0,"hq":3.0,"fr":6.0,"contracts":9.0,"newHQ":0.0,"newFr":0.0,"completing":4.0,"negotiating":6.0,"properties":["بوستان","کانکس","گلستان","کیان آباد 1","کیان آباد 2","کیانشهر"]},{"name":"محجل - مناف‌زاده","exec":"هم مسلک بهمن","target":30.0,"hq":6.0,"fr":4.0,"contracts":10.0,"newHQ":0.0,"newFr":0.0,"completing":9.0,"negotiating":0.0,"properties":[]},{"name":"صادقی سعید","exec":"هم مسلک بهمن","target":32.0,"hq":2.0,"fr":8.0,"contracts":10.0,"newHQ":0.0,"newFr":0.0,"completing":7.0,"negotiating":2.0,"properties":["خوی 1","خوی 2"]},{"name":"قدرتی میلاد","exec":"محسنی مجید","target":26.0,"hq":4.0,"fr":4.0,"contracts":8.0,"newHQ":0.0,"newFr":0.0,"completing":5.0,"negotiating":3.0,"properties":["فرمهین","خمین","نواب"]},{"name":"اسگندری حجت","exec":"محالی میثم","target":42.0,"hq":8.0,"fr":4.0,"contracts":12.0,"newHQ":0.0,"newFr":0.0,"completing":6.0,"negotiating":3.0,"properties":["بلوار کشاورز","شهدا","شهابی"]},{"name":"پاشایی بهنام","exec":"هم مسلک بهمن","target":15.0,"hq":3.0,"fr":1.0,"contracts":4.0,"newHQ":0.0,"newFr":0.0,"completing":2.0,"negotiating":1.0,"properties":["لنگرود"]}];
+const SHEET_ID='14Lt1ZKK3aoNSfrsi-FzKbLVEQzOp5nzzc5KFf_mILBU', GID='980860521';
+const PUBLISHED_ID='2PACX-1vQb-14w0moHzpHPQfsrZ8doUrIfJMmw2019w6YSLvGOaJjQYxxHW7xG5U-HMQHEu6J-elWNNoVu14Fp';
+let ALL=FALLBACK, online=false;
+const num=x=>{if(typeof x==='number')return Number.isFinite(x)?x:0;let n=Number(String(x??'').replace(/[,٪%\s]/g,''));return Number.isFinite(n)?n:0};
+const fmt=x=>Math.round(x).toLocaleString('fa-IR');const pct=x=>(Math.round(x*10)/10).toLocaleString('fa-IR')+'٪';
+const esc=x=>String(x??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+function mapSheet(row){const val=i=>row[i]&&typeof row[i]==='object'&&'v'in row[i]?row[i].v:row[i];const names=row.slice(12).map(c=>c&&typeof c==='object'&&'v'in c?c.v:c).filter(x=>x!==''&&x!==null&&x!==undefined).map(String);return {name:String(val(0)||'').trim(),exec:String(val(1)||'تعیین نشده').trim(),target:num(val(2)),hq:num(val(3)),fr:num(val(4)),contracts:num(val(5)),newHQ:num(val(7)),newFr:num(val(8)),completing:num(val(9)),negotiating:num(val(11)),properties:names}}
+function parseSheet(resp){const rows=resp.table?.rows||[];return rows.map(r=>(r.c||[])).map(mapSheet).filter(x=>x.name&&x.target>0)}
+function parseCSV(text){
+ const rows=[];let row=[],field='',quoted=false;
+ text=String(text||'').replace(/^\uFEFF/,'');
+ for(let i=0;i<text.length;i++){
+  let c=text[i];
+  if(quoted){if(c==='"'&&text[i+1]==='"'){field+='"';i++}else if(c==='"')quoted=false;else field+=c}
+  else if(c==='"')quoted=true;
+  else if(c===','){row.push(field);field=''}
+  else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field);rows.push(row);row=[];field=''}
+  else field+=c;
+ }
+ if(field.length||row.length){row.push(field);rows.push(row)}
+ return rows;
 }
-.execTrackLine{
-  position:absolute;left:4%;right:4%;top:50%;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(125,211,252,.18),rgba(255,255,255,.08),rgba(125,211,252,.18),transparent)
+function parsePublishedCSV(text){
+ const rows=parseCSV(text);
+ const data=rows.map(mapSheet).filter(x=>x.name&&x.target>0);
+ if(data.length<20||!data.some(d=>d.contracts>0))throw Error('ساختار یا تعداد ردیف‌های شیت منتشرشده معتبر نیست');
+ return data;
 }
-.execGrid{
-  position:relative;
-  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:10px
-}
-.execCard{
-  --accent:#4f8ef7;
-  --status:#4f8ef7;
-  position:relative;overflow:hidden;
-  min-height:250px;
-  padding:14px 14px 12px;
-  border-radius:19px;
-  border:1px solid color-mix(in srgb,var(--accent) 24%,rgba(255,255,255,.06));
-  background:
-    radial-gradient(340px 150px at 105% -15%,color-mix(in srgb,var(--accent) 18%,transparent),transparent 62%),
-    linear-gradient(155deg,color-mix(in srgb,var(--accent) 7%,#121a26),#0e151f 68%);
-  box-shadow:0 16px 34px rgba(0,0,0,.22);
-  transform:translateY(var(--lift,0px));
-}
-.execCard:before{
-  content:"";position:absolute;left:0;right:0;top:0;height:4px;
-  background:linear-gradient(90deg,transparent,var(--accent),transparent)
-}
-.execCard:after{
-  content:attr(data-rank);
-  position:absolute;left:8px;bottom:-22px;
-  font-size:92px;font-weight:950;line-height:1;
-  color:color-mix(in srgb,var(--accent) 9%,transparent);
-  pointer-events:none
-}
-.execCard.rank1{
-  --lift:-8px;
-  border-color:rgba(255,176,32,.38);
-  box-shadow:0 20px 44px rgba(255,176,32,.06),0 18px 38px rgba(0,0,0,.28)
-}
-.execTop{
-  display:flex;align-items:center;justify-content:space-between;gap:8px
-}
-.execRank{
-  display:flex;align-items:center;gap:7px
-}
-.execPos{
-  width:35px;height:35px;border-radius:11px;display:grid;place-items:center;
-  font-size:13px;font-weight:950;
-  border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
-  background:color-mix(in srgb,var(--accent) 12%,#111827);
-  color:var(--accent)
-}
-.rank1 .execPos{
-  color:#111;border:0;
-  background:linear-gradient(135deg,#ffe17b,#ffad16)
-}
-.execTier{
-  font-size:10px;font-weight:900;color:var(--status);
-  padding:4px 7px;border-radius:999px;
-  background:color-mix(in srgb,var(--status) 8%,#111827);
-  border:1px solid color-mix(in srgb,var(--status) 20%,transparent)
-}
-.execName{
-  margin-top:11px;font-size:19px;font-weight:950;line-height:1.4;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis
-}
-.execRegions{
-  font-size:10px;color:#74859b;margin-top:2px
-}
-.execGaugeRow{
-  display:grid;grid-template-columns:82px 1fr;gap:10px;align-items:center;margin-top:12px
-}
-.execGauge{
-  --p:0;
-  width:78px;height:78px;border-radius:50%;
-  display:grid;place-items:center;position:relative;
-  background:conic-gradient(var(--accent) calc(var(--p)*1%),#1a2638 0)
-}
-.execGauge:before{
-  content:"";position:absolute;inset:7px;border-radius:50%;
-  background:#0d141e;border:1px solid rgba(255,255,255,.045)
-}
-.execGaugeInner{position:relative;z-index:1;text-align:center}
-.execGaugeInner b{display:block;font-size:22px;line-height:1;color:var(--accent)}
-.execGaugeInner span{display:block;font-size:8px;color:#718198;margin-top:3px}
-.execPrimary .label{font-size:9px;color:#75869c}
-.execPrimary .value{font-size:28px;font-weight:950;line-height:1;margin-top:3px;color:var(--status)}
-.execPrimary .sub{font-size:9px;color:#66778d;margin-top:4px}
-.execMiniGrid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:11px
-}
-.execMini{
-  padding:7px 5px;text-align:center;border-radius:9px;
-  background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.045)
-}
-.execMini b{display:block;font-size:15px}
-.execMini span{display:block;font-size:8px;color:#6f8097;margin-top:2px}
-.execCompare{
-  margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06);
-  display:flex;align-items:center;justify-content:space-between;gap:7px
-}
-.execCompare span{font-size:9px;color:#73849a}
-.execCompare b{font-size:12px}
-.execCompare .up{color:#34d399}.execCompare .down{color:#ff7488}.execCompare .flat{color:#fbbf24}
-
-.execArenaFoot{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
-  border-top:1px solid #19263a;background:#19263a
-}
-.execFootStat{
-  background:#0c131d;padding:10px 14px;
-  display:flex;align-items:center;justify-content:space-between;gap:8px
-}
-.execFootStat span{font-size:10px;color:#718198}
-.execFootStat b{font-size:13px;color:#dce5ef}
-
-@media(max-width:1250px){
-  .execGrid{grid-template-columns:repeat(5,minmax(190px,1fr));overflow-x:auto;padding-bottom:4px}
-  .execArenaHead{align-items:flex-start;flex-direction:column}
-  .execChampionCallout{min-width:0;width:100%}
-}
-@media(max-width:900px){
-  .execGrid{grid-template-columns:1fr}
-  .execCard{min-height:auto;transform:none}
-  .execArenaFoot{grid-template-columns:1fr 1fr}
-}
-
-.championship{
-  border:1px solid #1b293d;border-radius:20px;overflow:hidden;
-  background:
-    radial-gradient(900px 280px at 50% -12%,rgba(79,142,247,.06),transparent 60%),
-    linear-gradient(145deg,#0b1119,#090d13)
-}
-.champHead{
-  padding:15px 18px;border-bottom:1px solid #1b293d;
-  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap
-}
-.champTitle{font-size:20px;font-weight:950}
-.champSub{font-size:11px;color:#7f90a6;margin-top:3px}
-.legend{display:flex;gap:9px;flex-wrap:wrap;font-size:10px;color:#8495aa}
-.legend i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-left:4px}
-
-.list{
-  display:grid;gap:9px;padding:11px
-}
-
-.driverCard{
-  --accent:#4f8ef7;
-  --status:#4f8ef7;
-  --newAccent:#38bdf8;
-  position:relative;overflow:hidden;
-  display:grid;
-  grid-template-columns:105px minmax(330px,1.55fr) minmax(200px,.95fr) minmax(185px,.86fr) minmax(185px,.86fr) minmax(185px,.86fr);
-  gap:10px;align-items:center;
-  min-height:154px;padding:17px 18px;
-  border:1px solid rgba(255,255,255,.055);border-radius:16px;
-  background:
-    radial-gradient(420px 150px at 100% -10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 58%),
-    radial-gradient(380px 120px at -10% 110%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 58%),
-    linear-gradient(150deg,
-      color-mix(in srgb,var(--accent) 10%,#131b28) 0%,
-      color-mix(in srgb,var(--accent) 5%,#101722) 56%,
-      #0d141e 100%
-    );
-  transition:.18s
-}
-.driverCard:hover{
-  transform:translateY(-2px);
-  border-color:color-mix(in srgb,var(--accent) 34%,#52627b);
-  box-shadow:0 18px 34px rgba(0,0,0,.26),0 0 0 1px color-mix(in srgb,var(--accent) 16%,transparent)
-}
-.driverCard:before{
-  content:"";position:absolute;right:0;top:0;bottom:0;width:5px;background:var(--accent)
-}
-.driverCard:after{
-  content:"";position:absolute;inset:auto auto -34px -34px;width:140px;height:140px;border-radius:50%;
-  background:radial-gradient(circle,color-mix(in srgb,var(--accent) 18%,transparent),transparent 68%);
-  pointer-events:none;filter:blur(2px)
-}
-.driverCard.top1{
-  border-color:rgba(255,176,32,.42);
-  background:
-    radial-gradient(600px 150px at 100% -15%,rgba(255,176,32,.18),transparent 60%),
-    linear-gradient(150deg,#1a1c20,#11161d)
-}
-.driverCard.top2{border-color:rgba(184,194,207,.25)}
-.driverCard.top3{border-color:rgba(184,115,51,.30)}
-
-.position{
-  display:flex;align-items:center;gap:7px
-}
-.driverCard:not(.top1):not(.top2):not(.top3) .posNum{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 28%,#1a2435),color-mix(in srgb,var(--accent) 62%,#0f1722));border-color:color-mix(in srgb,var(--accent) 34%,transparent);}
-.posNum{
-  width:70px;height:70px;border-radius:15px;display:grid;place-items:center;
-  background:#182438;border:1px solid #2a3a55;
-  font-size:29px;font-weight:950;line-height:1
-}
-.top1 .posNum{background:linear-gradient(135deg,#ffd45f,#e69300);color:#111;border:0}
-.top2 .posNum{background:linear-gradient(135deg,#e3e8ee,#8b98a9);color:#111;border:0}
-.top3 .posNum{background:linear-gradient(135deg,#d99d65,#9d5a25);color:#fff;border:0}
-.posLabel{font-size:9px;color:#6c7d93;margin-top:3px;text-align:center;font-weight:800}
-
-.identity{min-width:0}
-.name{font-size:23px;font-weight:950;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.exec{font-size:13px;color:#8394aa;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.statusLine{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.tag{
-  font-size:11px;padding:6px 9px;border-radius:999px;
-  background:#172338;border:1px solid #26364e;color:#9eb0c6
-}
-.tag.status{color:var(--status);border-color:color-mix(in srgb,var(--status) 22%,transparent);background:color-mix(in srgb,var(--status) 8%,#111827)}
-.tag.accent{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 24%,transparent);background:color-mix(in srgb,var(--accent) 10%,#111827)}
-.tag.newTag{color:var(--newAccent);border-color:color-mix(in srgb,var(--newAccent) 24%,transparent);background:color-mix(in srgb,var(--newAccent) 10%,#111827)}
-
-.metric{
-  min-width:0;padding:10px 11px;border-radius:12px;
-  background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.045)
-}
-.metric.mainMetric{
-  background:
-    linear-gradient(145deg,
-      color-mix(in srgb,var(--accent) 10%,#0b1119),
-      color-mix(in srgb,var(--accent) 4%,#101721)
-    );
-  border-color:color-mix(in srgb,var(--accent) 24%,rgba(255,255,255,.04))
-}
-.metric.totalMetric:before,
-.metric.newMetric:before{
-  content:"";display:block;height:3px;border-radius:999px;margin-bottom:9px
-}
-.metric.totalMetric:before{background:linear-gradient(90deg,var(--accent),transparent)}
-.metric.newMetric{
-  background:
-    linear-gradient(145deg,
-      color-mix(in srgb,var(--newAccent) 10%,#0b1119),
-      color-mix(in srgb,var(--newAccent) 4%,#101721)
-    );
-  border-color:color-mix(in srgb,var(--newAccent) 24%,rgba(255,255,255,.04))
-}
-.metric.newMetric:before{background:linear-gradient(90deg,var(--newAccent),transparent)}
-.metric.newMetric .metricValue{color:var(--newAccent)!important}
-.metric.newMetric .metricLabel{color:#8dcdf6;font-weight:900}
-.metric.totalMetric .metricLabel{color:#b7f5dc;font-weight:900}
-.metricLabel{font-size:12px;color:#78899f}
-.metricValue{font-size:32px;font-weight:950;line-height:1.05;margin-top:5px}
-.metricValue.primary{color:var(--accent)}
-.metricSub{font-size:12px;color:#64758b;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.progress{height:6px;border-radius:999px;background:#182438;overflow:hidden;margin-top:7px}
-.progressFill{height:100%;border-radius:999px;background:var(--accent)}
-.progressFill.new{background:var(--newAccent)}
-
-
-.gridHeader{
-  display:grid;
-  grid-template-columns:105px minmax(330px,1.55fr) minmax(200px,.95fr) minmax(185px,.86fr) minmax(185px,.86fr) minmax(185px,.86fr);
-  gap:10px;padding:9px 14px;margin:0 11px 2px;
-  color:#6f8198;font-size:12px;font-weight:850
-}
-.gridHeader div{text-align:center}
-.gridHeader div:nth-child(2){text-align:right}
-
-/* One shared sort mode controls both regional and executive standings. */
-.sortModeBar{
-  display:flex;align-items:center;flex-wrap:wrap;gap:9px;
-  margin:-1px 0 14px;padding:12px 14px;
-  border:1px solid #26344a;border-radius:13px;background:#0d1520
-}
-.sortModeCaption{font-size:12px;color:#cbd5e1;font-weight:850;margin-left:4px}
-.sortModeBtn{
-  border:1px solid #34445b;border-radius:10px;background:#172132;
-  color:#cad6e5;padding:9px 13px;cursor:pointer;font-size:12px;font-weight:900;
-  transition:background .15s,border-color .15s,color .15s
-}
-.sortModeBtn:hover{border-color:#67a1fa;color:#fff}
-.sortModeBtn.isActive{background:#0b3a31;border-color:#00d084;color:#66f0b5}
-#sortNewBtn.isActive{background:#112f4b;border-color:#38bdf8;color:#a3e4ff}
-.sortModeHint{color:#7e90a9;font-size:11px;margin-right:auto}
-.rankBasis{display:inline-flex;color:#89baf5;background:rgba(79,142,247,.09);
-  border:1px solid rgba(79,142,247,.23);border-radius:7px;font-size:10px;
-  font-weight:800;padding:5px 9px;margin-top:8px}
-.driverCard .metric.isRankMetric{border-color:#67a1fa;box-shadow:inset 0 0 0 1px rgba(103,161,250,.14)}
-.execCard.rankNew .execPrimary{padding:7px 9px;background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.18);border-radius:10px}
-@media(max-width:900px){
-  .sortModeBar{padding:10px;gap:7px}
-  .sortModeBtn{flex:1;min-width:145px;font-size:11px}
-  .sortModeHint{margin-right:0;width:100%;line-height:1.7}
-}
-
-@media(max-width:1300px){
-  .hero{grid-template-columns:1.2fr repeat(2,1fr)}
-  .heroKpi:nth-child(5),.heroKpi:nth-child(6){display:none}
-  .driverCard,.gridHeader{
-    grid-template-columns:76px minmax(240px,1.4fr) repeat(4,minmax(135px,.8fr))
-  }
-}
-@media(max-width:900px){
-  .header{position:relative;flex-direction:column;align-items:stretch}
-  .hero{grid-template-columns:1fr 1fr}
-  .heroMain{grid-column:1/-1}
-  .controls{grid-template-columns:1fr 1fr}
-  .controls input{grid-column:1/-1}
-  .gridHeader{display:none}
-  .driverCard{
-    grid-template-columns:70px minmax(0,1fr) minmax(120px,.7fr);
-    gap:8px
-  }
-  .metric:nth-of-type(n+3){display:none}
-  .rankDelta{grid-column:2/-1}
-}
-</style>
-</head>
-<body>
-
-<div class="app">
-  <header class="header">
-    <div class="brand">
-      <div class="logo">🏁</div>
-      <div style="min-width:0">
-        <div class="brandTitle">Daily Market — Regional Championship</div>
-        <div class="brandSub">جدول رتبه‌بندی عملکرد توسعه مناطق · سبک Formula 1 Standings</div>
-      </div>
-    </div>
-    <div class="actions">
-      <div class="badge live" id="sync">● در حال اتصال...</div>
-      <div class="badge" id="updated">آخرین بروزرسانی: —</div>
-      <button class="btn" onclick="loadData(true)">↻ بروزرسانی</button>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="heroMain">
-      <div class="eyebrow">CEO PERFORMANCE SNAPSHOT</div>
-      <div class="heroTitle">رتبه‌بندی عملکرد توسعه مناطق</div>
-      <div class="heroText">تمام شاخص‌های کلیدی هر منطقه در یک ردیف؛ جایگاه، تحقق هدف کل، تحقق هدف جدید از شهریور، افتتاح، قرارداد و مانده تا هدف جدید.</div>
-    </div>
-    <div class="heroKpi" style="--c:#00d084">
-      <div class="kLabel">تحقق هدف کل</div>
-      <div class="kVal" id="totalPct">—</div>
-      <div class="kSub" id="totalSub">—</div>
-    </div>
-    <div class="heroKpi" style="--c:#4f8ef7">
-      <div class="kLabel">تحقق هدف جدید از شهریور</div>
-      <div class="kVal" id="newPct">—</div>
-      <div class="kSub" id="newSub">—</div>
-    </div>
-    <div class="heroKpi" style="--c:#ffb020">
-      <div class="kLabel">کل قرارداد / هدف کل قرارداد</div>
-      <div class="kVal" id="contractsVsTarget">—</div>
-      <div class="kSub" id="contractsVsTargetSub">—</div>
-    </div>
-    <div class="heroKpi" style="--c:#f97316">
-      <div class="kLabel">کل افتتاح سال</div>
-      <div class="kVal" id="openTotal">—</div>
-      <div class="kSub">فروشگاه افتتاح‌شده</div>
-    </div>
-    <div class="heroKpi" style="--c:#ff4d67">
-      <div class="kLabel">مناطق بحرانی</div>
-      <div class="kVal" id="criticalCount">—</div>
-      <div class="kSub">تحقق کمتر از 40%</div>
-    </div>
-  </section>
-
-  <section class="controls">
-    <input id="search" placeholder="جستجو مدیر منطقه یا مدیر اجرایی..." oninput="applyFilters()">
-    <select id="execFilter" onchange="applyFilters()"><option value="">همه مدیران اجرایی</option></select>
-    <select id="statusFilter" onchange="applyFilters()">
-      <option value="">همه سطوح عملکرد</option>
-      <option value="excellent">عالی ≥ 100%</option>
-      <option value="good">خوب 70–99%</option>
-      <option value="watch">متوسط 40–69%</option>
-      <option value="risk">ضعیف &lt; 40%</option>
-    </select>
-    <select id="sortFilter" onchange="applyFilters()" aria-label="انتخاب معیار مرتب‌سازی">
-      <option value="total">رتبه‌بندی بر اساس تحقق هدف کل</option>
-      <option value="new">رتبه‌بندی بر اساس تحقق هدف جدید از شهریور (بیشترین به کمترین)</option>
-      <option value="gap">رتبه‌بندی بر اساس کمترین Gap</option>
-      <option value="opened">رتبه‌بندی بر اساس افتتاح</option>
-    </select>
-    <button onclick="resetFilters()">ریست</button>
-    <div class="count" id="count">—</div>
-  </section>
-
-  <div class="sortModeBar" role="group" aria-label="انتخاب مبنای رتبه‌بندی مناطق و مدیران اجرایی">
-    <span class="sortModeCaption">مبنای رتبه‌بندی:</span>
-    <button type="button" id="sortTotalBtn" class="sortModeBtn isActive" aria-pressed="true" onclick="setSortMode('total')">تحقق هدف کل</button>
-    <button type="button" id="sortNewBtn" class="sortModeBtn" aria-pressed="false" onclick="setSortMode('new')">تحقق هدف جدید از شهریور</button>
-    <span class="sortModeHint" id="sortModeHint">رتبه‌بندی مناطق و مدیران اجرایی بر اساس تحقق هدف کل</span>
-  </div>
-
-  <section class="executiveArena">
-    <div class="execArenaBg"></div>
-
-    <div class="execArenaHead">
-      <div>
-        <div class="execKicker">EXECUTIVE COMMAND ARENA</div>
-        <div class="execArenaTitle">عملکرد مدیران اجرایی</div>
-        <div class="execArenaSub">نمای تجمیعی عملکرد مناطق تحت مدیریت هر مدیر اجرایی؛ رتبه، تحقق هدف کل، تحقق هدف جدید از شهریور، قرارداد، افتتاح و Gap در یک نمای ویژه.</div>
-        <div class="rankBasis" id="execRankBasis">رتبه‌بندی بر اساس: تحقق هدف کل</div>
-      </div>
-
-      <div class="execChampionCallout" id="execChampionCallout">
-        <div class="execChampionIcon">★</div>
-        <div>
-          <span>LEADING EXECUTIVE</span>
-          <strong id="execChampionName">—</strong>
-        </div>
-        <b id="execChampionScore">—</b>
-      </div>
-    </div>
-
-    <div class="execTrack">
-      <div class="execTrackLine"></div>
-      <div class="execGrid" id="execGrid"></div>
-    </div>
-
-    <div class="execArenaFoot">
-      <div class="execFootStat">
-        <span>بیشترین تحقق کل</span>
-        <b id="execBestTotal">—</b>
-      </div>
-      <div class="execFootStat">
-        <span>بالاترین تحقق هدف جدید از شهریور</span>
-        <b id="execBestNew">—</b>
-      </div>
-      <div class="execFootStat">
-        <span>بیشترین افتتاح</span>
-        <b id="execBestOpen">—</b>
-      </div>
-      <div class="execFootStat">
-        <span>کمترین مانده تا هدف جدید</span>
-        <b id="execBestGap">—</b>
-      </div>
-    </div>
-  </section>
-
-<section class="championship">
-    <div class="champHead">
-      <div>
-        <div class="champTitle">Regional Standings — رتبه ۱ تا ۲۴</div>
-        <div class="champSub">نمای خطی شبیه جدول Formula 1؛ هرچه از صدر جدول پایین‌تر می‌رویم، رنگ کارت‌ها هم وخامت عملکرد را بیشتر القا می‌کند و شاخص‌های کلیدی در دو ستون متمایز نمایش داده می‌شوند.</div>
-        <div class="rankBasis" id="regionalRankBasis">رتبه‌بندی بر اساس: تحقق هدف کل</div>
-      </div>
-      <div class="legend">
-        <span><i style="background:#00d084"></i>عالی</span>
-        <span><i style="background:#4f8ef7"></i>خوب</span>
-        <span><i style="background:#ffb020"></i>متوسط</span>
-        <span><i style="background:#ff4d67"></i>ضعیف</span>
-      </div>
-    </div>
-
-    <div class="gridHeader">
-      <div>رتبه</div>
-      <div>مدیر منطقه / مدیر اجرایی</div>
-      <div>تحقق هدف کل</div>
-      <div>تحقق هدف جدید از شهریور</div>
-      <div>افتتاح / قرارداد</div>
-      <div>مانده تا هدف جدید / Pipeline</div>
-      
-    </div>
-
-    <div class="list" id="list"></div>
-  </section>
-</div>
-
-<script>
-const API_URL="https://script.google.com/macros/s/AKfycbxR0BMOAjbgVuYqaxJxQPBtIPYC_K7IxgMA2PaLrE5KREqSqEDvjWUqryIVNwob6cnm/exec";
-
-let ALL=[],DATA=[];
-
-const n=v=>{const x=parseFloat(String(v??'').replace(/[,٪%]/g,''));return Number.isFinite(x)?x:0};
-const pct=v=>{let x=n(v);if(Math.abs(x)<=3)x*=100;return x};
-const sum=(a,k)=>a.reduce((s,d)=>s+(+d[k]||0),0);
-const fmt=x=>(Math.round(x*10)/10).toLocaleString('fa-IR');
-
-function norm(s){
-  return String(s??'').replace(/ي/g,'ی').replace(/ك/g,'ک')
-    .replace(/[\u200c\u200f\u202a-\u202e]/g,' ')
-    .replace(/[٪%:()\-_/\\]/g,' ').replace(/\s+/g,' ').trim().toLowerCase();
-}
-function color(p){return p>=100?'#00d084':p>=70?'#4f8ef7':p>=40?'#ffb020':'#ff4d67'}
-function label(p){return p>=100?'عالی':p>=70?'خوب':p>=40?'متوسط':'ضعیف'}
-function statusClass(p){return p>=100?'excellent':p>=70?'good':p>=40?'watch':'risk'}
-
-function accentByRank(rank,total){
-  if(total<=1) return 'hsl(145 80% 46%)';
-  const t=(rank-1)/(total-1); // 0 top -> 1 bottom
-  const hue=145-(145*t);      // green -> red
-  const sat=82;
-  const light=50-(t*4);
-  return `hsl(${hue} ${sat}% ${light}%)`;
-}
-
-
-function mapData(objects){
-  return objects.map(obj=>{
-    const m={};Object.entries(obj||{}).forEach(([k,v])=>m[norm(k)]=v);
-    const get=A=>{
-      const a=A.map(norm);
-      for(const x of a)if(x in m)return m[x];
-      for(const x of a){const k=Object.keys(m).find(k=>k.includes(x)||x.includes(k));if(k)return m[k]}
-      return"";
-    };
-    const name=String(get(['مدیر منطقه'])||'').trim();if(!name)return null;
-    const exec=String(get(['مدیر اجرایی'])||'').trim()||'تعیین نشده';
-    // Prefer timeless, exact source headers; legacy month-ended headers remain readable by pattern.
-    const metric=(names,fallback)=>{
-      for(const name of names){
-        const key=norm(name);
-        if(Object.prototype.hasOwnProperty.call(m,key))return m[key];
+// Internal Apps Script RPC: no JSONP, CORS, or ContentService redirects.
+let refreshSequence=0;
+function refresh(){
+ const seq=++refreshSequence;
+ const stat=document.getElementById('sync');
+ stat.textContent='● در حال دریافت اطلاعات زنده...';stat.className='pill';
+ if(!window.google || !google.script || !google.script.run){
+   showConnectionError('این فایل باید از طریق آدرس Web App گوگل اجرا شود، نه با باز کردن مستقیم Index.html.');
+   return;
+ }
+ google.script.run
+   .withSuccessHandler(function(payload){
+      if(seq!==refreshSequence)return;
+      if(!payload || payload.success!==true || !Array.isArray(payload.data) || payload.data.length<20){
+         showConnectionError((payload&&payload.error)||'پاسخ شیت معتبر نیست.');return;
       }
-      const key=Object.keys(m).find(fallback);
-      return key===undefined?'':m[key];
-    };
-    const newTarget=n(metric(
-      ['هدف جدید از شهریور','هدف جدید قراردادی از شهریور','هدف جدید شهریور','هدف جدید'],
-      key=>key.startsWith('هدف جدید')&&key.includes('شهریور')
-    ));
-    const newHQ=n(get(['قرارداد ستادی از شهریور','قرارداد ستادی']));
-    const newFran=n(get(['ترهین فرانچایز از شهریور','ترهین فرانچایز','قرارداد فرانچایز از شهریور','قرارداد فرانچایز']));
-    const newContracts=n(get(['کل قرارداد از شهریور']))||(newHQ+newFran);
-    const pipeline=n(get(['درحال افتتاح','در حال افتتاح']));
-    const totalHQ=n(get(['مجموع قرارداد ستادی']));
-    const totalFran=n(get(['مجموع قرارداد فرانچایز']));
-    const totalContracts=n(get(['مجموع کل قرارداد','مجموع قرارداد']));
-    const totalOpened=n(get(['مجموع افتتاح']));
-    const totalTarget=n(metric(
-      ['هدف کل','هدف کل قراردادی','هدف کل قرارداد','هدف سالانه','هدف کل سال','هدف نهایی'],
-      key=>/^هدف(?:\s+قراردادی)?\s+تا\s+\S+/.test(key)
-    ));
-
-    let newPct=pct(metric(
-      ['تحقق هدف جدید از شهریور','تحقق هدف جدید قراردادی از شهریور','تحقق هدف قراردادی از شهریور','تحقق هدف جدید قراردادی','درصد تحقق هدف جدید از شهریور'],
-      key=>key.includes('تحقق')&&key.includes('شهریور')
-    ));
-    if(!newPct&&newTarget)newPct=newContracts/newTarget*100;
-
-    let totalPct=pct(metric(
-      ['تحقق هدف کل','تحقق کل هدف','تحقق هدف کل قراردادی','تحقق کل هدف قراردادی','درصد تحقق هدف کل'],
-      key=>key.includes('تحقق')&&key.includes('هدف')&&key.includes('تا')&&!key.includes('شهریور')
-    ));
-    if(!totalPct&&totalTarget)totalPct=totalContracts/totalTarget*100;
-
-    const gap=Math.max(totalTarget-totalContracts,0);
-    const newGap=Math.max(newTarget-newContracts,0);
-    const newOver=Math.max(newContracts-newTarget,0);
-    return{name,exec,newTarget,newHQ,newFran,newContracts,pipeline,totalHQ,totalFran,totalContracts,totalOpened,totalTarget,newPct,totalPct,gap,newGap,newOver};
-  }).filter(Boolean);
+      ALL=payload.data.map(d=>({name:String(d.name||'').trim(),exec:String(d.exec||'تعیین نشده').trim(),target:num(d.target),hq:num(d.hq),fr:num(d.fr),contracts:num(d.contracts),newHQ:num(d.newHQ),newFr:num(d.newFr),completing:num(d.completing),negotiating:num(d.negotiating),properties:Array.isArray(d.properties)?d.properties.map(String):[]})).filter(d=>d.name&&d.target>0);
+      online=true;
+      stat.textContent='● اتصال زنده برقرار · '+fmt(ALL.length)+' منطقه';stat.className='pill live';
+      document.getElementById('updated').textContent='آخرین دریافت موفق: '+new Date().toLocaleString('fa-IR');
+      populate();render();
+   })
+   .withFailureHandler(function(error){
+      if(seq!==refreshSequence)return;
+      showConnectionError(error&&error.message||String(error));
+   })
+   .getDashboardData();
 }
-
-async function loadData(manual=false){
-  const sync=document.getElementById('sync');
-  sync.textContent=manual?'● در حال بروزرسانی...':'● در حال اتصال...';
-  sync.style.color='#ffcf66';
-  try{
-    const r=await fetch(API_URL+'?t='+Date.now(),{cache:'no-store',redirect:'follow'});
-    if(!r.ok)throw new Error('HTTP '+r.status);
-    const p=await r.json();
-    if(!p?.success||!Array.isArray(p.data))throw new Error('Invalid payload');
-    ALL=mapData(p.data);
-    populateExec();
-    applyFilters();
-    sync.textContent='● اتصال زنده';
-    sync.style.color='#38e8a0';
-    document.getElementById('updated').textContent='آخرین بروزرسانی: '+new Date().toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'});
-  }catch(e){
-    console.error(e);
-    sync.textContent='● خطای اتصال';
-    sync.style.color='#ff7488';
-  }
+function showConnectionError(reason){
+ const stat=document.getElementById('sync');
+ stat.textContent=online?'● اتصال قطع شد · آخرین داده زنده':'● اتصال برقرار نشد · داده نمونه';stat.className='pill error';
+ document.getElementById('updated').textContent='خطا: '+String(reason).slice(0,140);
+ if(!online)ALL=FALLBACK;
+ console.error('Google Apps Script live connection:',reason);
+ populate();render();
 }
-
-function populateExec(){
-  const s=document.getElementById('execFilter'),cur=s.value;
-  const ex=[...new Set(ALL.map(d=>d.exec))].sort((a,b)=>a.localeCompare(b,'fa'));
-  s.innerHTML='<option value="">همه مدیران اجرایی</option>'+ex.map(x=>`<option value="${x}">${x}</option>`).join('');
-  if(ex.includes(cur))s.value=cur;
-}
-
-function resetFilters(){
-  search.value='';execFilter.value='';statusFilter.value='';sortFilter.value='total';
-  applyFilters();
-}
-
-function setSortMode(mode){
-  if(mode!=='total'&&mode!=='new')return;
-  document.getElementById('sortFilter').value=mode;
-  applyFilters();
-}
-
-function rankingTitle(mode){
-  return ({total:'تحقق هدف کل',new:'تحقق هدف جدید از شهریور',
-    gap:'کمترین مانده تا هدف جدید',opened:'بیشترین افتتاح'})[mode] || 'تحقق هدف کل';
-}
-
-function compareRank(a,b,mode){
-  if(mode==='new')return b.newPct-a.newPct || b.totalPct-a.totalPct;
-  if(mode==='gap')return (a.newGap??a.gap)-(b.newGap??b.gap) || b.newPct-a.newPct;
-  if(mode==='opened')return b.totalOpened-a.totalOpened || b.totalPct-a.totalPct;
-  return b.totalPct-a.totalPct || b.newPct-a.newPct;
-}
-
-function updateSortUI(mode){
-  for(const m of ['total','new']){
-    const el=document.getElementById(m==='total'?'sortTotalBtn':'sortNewBtn');
-    const active=m===mode;
-    el.classList.toggle('isActive',active);
-    el.setAttribute('aria-pressed',String(active));
-  }
-  const title=rankingTitle(mode);
-  document.getElementById('sortModeHint').textContent='مبنای فعلی رتبه‌بندی مناطق و مدیران اجرایی: '+title;
-  document.getElementById('execRankBasis').textContent='رتبه‌بندی بر اساس: '+title;
-  document.getElementById('regionalRankBasis').textContent='رتبه‌بندی بر اساس: '+title;
-}
-
-function applyFilters(){
-  const q=search.value.trim().toLowerCase(),ex=execFilter.value,st=statusFilter.value,sort=sortFilter.value;
-  const activePct=d=>sort==='new'?d.newPct:d.totalPct;
-  DATA=ALL.filter(d=>(!q||(d.name+' '+d.exec).toLowerCase().includes(q))&&(!ex||d.exec===ex)&&(!st||statusClass(activePct(d))===st));
-  DATA.sort((a,b)=>compareRank(a,b,sort));
-  updateSortUI(sort);
-  count.textContent=DATA.length.toLocaleString('fa-IR')+' منطقه';
-  render();
-}
-
-function buildExecutiveData(source){
-  const groups={};
-  source.forEach(d=>{
-    if(!groups[d.exec]){
-      groups[d.exec]={
-        name:d.exec,regions:0,
-        totalTarget:0,totalContracts:0,
-        newTarget:0,newContracts:0,
-        totalOpened:0,pipeline:0,
-        totalHQ:0,totalFran:0,gap:0
-      };
-    }
-    const g=groups[d.exec];
-    g.regions++;
-    g.totalTarget+=d.totalTarget;
-    g.totalContracts+=d.totalContracts;
-    g.newTarget+=d.newTarget;
-    g.newContracts+=d.newContracts;
-    g.totalOpened+=d.totalOpened;
-    g.pipeline+=d.pipeline;
-    g.totalHQ+=d.totalHQ;
-    g.totalFran+=d.totalFran;
-  });
-
-  return Object.values(groups).map(g=>{
-    g.totalPct=g.totalTarget?g.totalContracts/g.totalTarget*100:0;
-    g.newPct=g.newTarget?g.newContracts/g.newTarget*100:0;
-    g.gap=Math.max(g.newTarget-g.newContracts,0);
-    g.over=Math.max(g.newContracts-g.newTarget,0);
-    g.momentum=g.newPct-g.totalPct;
-    return g;
-  });
-}
-
-function renderExecutives(){
-  const mode=sortFilter.value;
-  const execs=buildExecutiveData(ALL).sort((a,b)=>compareRank(a,b,mode));
-  if(!execs.length) return;
-
-  const total=execs.length;
-  const selectedPct=d=>mode==='new'?d.newPct:d.totalPct;
-  const avg=execs.reduce((s,d)=>s+selectedPct(d),0)/total;
-
-  document.getElementById('execGrid').innerHTML=execs.map((d,i)=>{
-    const rank=i+1;
-    const accent=accentByRank(rank,total);
-    const s=color(selectedPct(d));
-    const momentum=d.momentum;
-    const momentumClass=momentum>5?'up':momentum<-5?'down':'flat';
-    const momentumText=momentum>5?'▲ شتاب مثبت':momentum<-5?'▼ افت شتاب':'● پایدار';
-    const vsAvg=selectedPct(d)-avg;
-    const vsText=(vsAvg>0?'+':'')+fmt(vsAvg)+'pp';
-
-    return `
-      <article class="execCard ${rank===1?'rank1':''} ${mode==='new'?'rankNew':''}" data-rank="0${rank}" style="--accent:${accent};--status:${s}">
-        <div class="execTop">
-          <div class="execRank">
-            <div class="execPos">${rank.toLocaleString('fa-IR')}</div>
-            <div class="execTier">${label(selectedPct(d))}</div>
-          </div>
-          <div style="font-size:8px;color:${momentum>=0?'#34d399':'#ff7488'}">${momentumText}</div>
-        </div>
-
-        <div class="execName">${d.name}</div>
-        <div class="execRegions">${d.regions.toLocaleString('fa-IR')} منطقه تحت مدیریت</div>
-
-        <div class="execGaugeRow">
-          <div class="execGauge" style="--p:${Math.min(d.totalPct,100)}">
-            <div class="execGaugeInner">
-              <b>${fmt(d.totalPct)}%</b>
-              <span>هدف کل</span>
-            </div>
-          </div>
-
-          <div class="execPrimary">
-            <div class="label">تحقق هدف جدید از شهریور</div>
-            <div class="value">${fmt(d.newPct)}%</div>
-            <div class="sub">${d.newContracts.toLocaleString('fa-IR')} / ${d.newTarget.toLocaleString('fa-IR')} قرارداد</div>
-          </div>
-        </div>
-
-        <div class="execMiniGrid">
-          <div class="execMini">
-            <b>${d.totalContracts.toLocaleString('fa-IR')}</b>
-            <span>کل قرارداد</span>
-          </div>
-          <div class="execMini">
-            <b>${d.totalOpened.toLocaleString('fa-IR')}</b>
-            <span>افتتاح</span>
-          </div>
-          <div class="execMini">
-            <b>${d.gap.toLocaleString('fa-IR')}</b>
-            <span>مانده هدف جدید</span>
-          </div>
-        </div>
-
-        <div class="execCompare">
-          <span>نسبت به میانگین ${mode==='new'?'هدف جدید':'هدف کل'} مدیران اجرایی</span>
-          <b class="${vsAvg>3?'up':vsAvg<-3?'down':'flat'}">${vsText}</b>
-        </div>
-      </article>`;
-  }).join('');
-
-  const bestTotal=[...execs].sort((a,b)=>b.totalPct-a.totalPct)[0];
-  const bestNew=[...execs].sort((a,b)=>b.newPct-a.newPct)[0];
-  const bestOpen=[...execs].sort((a,b)=>b.totalOpened-a.totalOpened)[0];
-  const bestGap=[...execs].sort((a,b)=>a.gap-b.gap)[0];
-
-  const champion=execs[0];
-  document.getElementById('execChampionName').textContent=champion.name;
-  document.getElementById('execChampionScore').textContent=
-    mode==='opened'?fmt(champion.totalOpened)+' افتتاح':
-    mode==='gap'?fmt(champion.gap)+' مانده':
-    fmt(selectedPct(champion))+'%';
-
-  document.getElementById('execBestTotal').textContent=`${bestTotal.name} · ${fmt(bestTotal.totalPct)}%`;
-  document.getElementById('execBestNew').textContent=`${bestNew.name} · ${fmt(bestNew.newPct)}%`;
-  document.getElementById('execBestOpen').textContent=`${bestOpen.name} · ${bestOpen.totalOpened.toLocaleString('fa-IR')}`;
-  document.getElementById('execBestGap').textContent=`${bestGap.name} · ${bestGap.gap.toLocaleString('fa-IR')}`;
-}
-
-function render(){
-  renderExecutives();
-  const totalTarget=sum(DATA,'totalTarget'),totalContracts=sum(DATA,'totalContracts');
-  const newTarget=sum(DATA,'newTarget'),newContracts=sum(DATA,'newContracts');
-  const total=totalTarget?totalContracts/totalTarget*100:0;
-  const np=newTarget?newContracts/newTarget*100:0;
-
-  totalPct.textContent=fmt(total)+'%';
-  totalSub.textContent=`${totalContracts.toLocaleString('fa-IR')} قرارداد از هدف ${totalTarget.toLocaleString('fa-IR')}`;
-  newPct.textContent=fmt(np)+'%';
-  newSub.textContent=`${newContracts.toLocaleString('fa-IR')} قرارداد از هدف ${newTarget.toLocaleString('fa-IR')}`;
-  contractsVsTarget.textContent=`${totalContracts.toLocaleString('fa-IR')} / ${totalTarget.toLocaleString('fa-IR')}`;
-  contractsVsTargetSub.textContent=`تحقق ${fmt(total)}% از هدف کل قرارداد`;
-  openTotal.textContent=sum(DATA,'totalOpened').toLocaleString('fa-IR');
-  criticalCount.textContent=DATA.filter(d=>(sortFilter.value==='new'?d.newPct:d.totalPct)<40).length.toLocaleString('fa-IR');
-
-  const ranked=[...DATA];
-  list.innerHTML=ranked.map((d,i)=>{
-    const rank=i+1;
-    const mode=sortFilter.value;
-    const selectedPct=mode==='new'?d.newPct:d.totalPct;
-    const s=color(selectedPct);
-    const accent=accentByRank(rank,ranked.length);
-
-    return `
-      <article class="driverCard ${rank===1?'top1':rank===2?'top2':rank===3?'top3':''}" style="--status:${s};--accent:${accent};--newAccent:#38bdf8">
-        <div class="position">
-          <div>
-            <div class="posNum">${rank.toLocaleString('fa-IR')}</div>
-            <div class="posLabel">POSITION</div>
-          </div>
-        </div>
-
-        <div class="identity">
-          <div class="name">${d.name}</div>
-          <div class="exec">مدیر اجرایی: ${d.exec}</div>
-          <div class="statusLine">
-            <span class="tag status">${label(selectedPct)}</span>
-            <span class="tag accent">${mode==='new'?'رتبه بر اساس هدف جدید':'رتبه عملکرد'}</span>
-            <span class="tag newTag">هدف جدید از شهریور</span>
-            <span class="tag">کل قرارداد ${d.totalContracts.toLocaleString('fa-IR')}</span>
-            <span class="tag">ستادی ${d.totalHQ.toLocaleString('fa-IR')}</span>
-            <span class="tag">فرانچایز ${d.totalFran.toLocaleString('fa-IR')}</span>
-          </div>
-        </div>
-
-        <div class="metric mainMetric totalMetric ${mode==='total'?'isRankMetric':''}">
-          <div class="metricLabel">تحقق هدف کل${mode==='total'?' · مبنای رتبه‌بندی':''}</div>
-          <div class="metricValue primary">${fmt(d.totalPct)}%</div>
-          <div class="metricSub">${d.totalContracts.toLocaleString('fa-IR')} / ${d.totalTarget.toLocaleString('fa-IR')} قرارداد</div>
-          <div class="progress"><div class="progressFill" style="width:${Math.min(d.totalPct,100)}%"></div></div>
-        </div>
-
-        <div class="metric newMetric ${mode==='new'?'isRankMetric':''}">
-          <div class="metricLabel">تحقق هدف جدید از شهریور${mode==='new'?' · مبنای رتبه‌بندی':''}</div>
-          <div class="metricValue">${fmt(d.newPct)}%</div>
-          <div class="metricSub">${d.newContracts.toLocaleString('fa-IR')} / ${d.newTarget.toLocaleString('fa-IR')} قرارداد</div>
-          <div class="progress"><div class="progressFill new" style="width:${Math.min(d.newPct,100)}%"></div></div>
-        </div>
-
-        <div class="metric">
-          <div class="metricLabel">افتتاح</div>
-          <div class="metricValue">${d.totalOpened.toLocaleString('fa-IR')}</div>
-          <div class="metricSub">Pipeline: ${d.pipeline.toLocaleString('fa-IR')}</div>
-        </div>
-
-        <div class="metric">
-          <div class="metricLabel">مانده تا هدف جدید</div>
-          <div class="metricValue" style="color:${d.newGap===0?'#34d399':'#ffb020'}">
-            ${d.newGap===0 ? (d.newOver>0 ? '+'+d.newOver.toLocaleString('fa-IR') : '0') : d.newGap.toLocaleString('fa-IR')}
-          </div>
-          <div class="metricSub">
-            ${d.newGap===0
-              ? (d.newOver>0 ? 'مازاد از هدف جدید' : 'هدف جدید محقق شده')
-              : 'قرارداد مانده تا تحقق هدف جدید'}
-          </div>
-        </div>
-      </article>`;
-  }).join('');
-}
-
-loadData();
-setInterval(()=>loadData(false),5*60*1000);
-</script>
-</body>
-</html>
+function populate(){const el=document.getElementById('ex'),old=el.value;const names=[...new Set(ALL.map(x=>x.exec))].sort((a,b)=>a.localeCompare(b,'fa'));el.innerHTML='<option value="">همه مدیران اجرایی</option>'+names.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');if(names.includes(old))el.value=old}
+function resetFilters(){q.value='';ex.value='';sort.value='pct';risk.value='';render()}
+function render(){const query=q.value.trim().toLowerCase(),executive=ex.value,mode=sort.value,riskVal=risk.value;const all=ALL.filter(d=>(!executive||d.exec===executive)&&(!query||[d.name,d.exec,...d.properties].join(' ').toLowerCase().includes(query))&&(!riskVal||(riskVal==='high'?d.contracts/d.target>=.5:riskVal==='mid'?d.contracts/d.target>=.35&&d.contracts/d.target<.5:d.contracts/d.target<.35)));const by=(d)=>mode==='pct'?d.contracts/d.target:mode==='contracts'?d.contracts:mode==='gap'?Math.max(d.target-d.contracts,0):mode==='completing'?d.completing:d.negotiating;all.sort((a,b)=>(mode==='gap'?by(a)-by(b):by(b)-by(a))||b.contracts/b.target-a.contracts/a.target);count.textContent=fmt(all.length)+' منطقه';regionCount.textContent=fmt(all.length)+' منطقه';let totals=all.reduce((s,d)=>{['target','hq','fr','contracts','completing','negotiating'].forEach(k=>s[k]+=d[k]);return s},{target:0,hq:0,fr:0,contracts:0,completing:0,negotiating:0});const tiles=[['تحقق هدف قطعی',totals.target?pct(100*totals.contracts/totals.target):'—',`${fmt(totals.contracts)} از ${fmt(totals.target)} قرارداد`,'#00d084'],['کل قرارداد قطعی',fmt(totals.contracts),`ستادی ${fmt(totals.hq)} · فرانچایز ${fmt(totals.fr)}`,'#4f8ef7'],['باقیمانده تا هدف',fmt(Math.max(totals.target-totals.contracts,0)),'فقط قرارداد قطعی مبنای محاسبه است','#ff5873'],['فرانچایز در حال تکمیل',fmt(totals.completing),'اطلاع‌رسانی · خارج از تحقق','#ffbe47'],['املاک در حال مذاکره',fmt(totals.negotiating),'اطلاع‌رسانی · خارج از تحقق','#50cbdc'],['مناطق مورد بررسی',fmt(all.length),'فیلترهای فعال در محاسبات لحاظ شده‌اند','#af95ff']];kpis.innerHTML=tiles.map(x=>`<div class="kpi" style="--accent:${x[3]}"><div class="label">${x[0]}</div><strong>${x[1]}</strong><small>${x[2]}</small></div>`).join('');let map={};ALL.forEach(d=>{let g=map[d.exec]??={name:d.exec,regions:0,target:0,contracts:0,completing:0,negotiating:0};g.regions++;['target','contracts','completing','negotiating'].forEach(k=>g[k]+=d[k]);});let executives=Object.values(map).sort((a,b)=>b.contracts/b.target-a.contracts/a.target);execs.innerHTML=executives.map((d,i)=>{const n=d.contracts/d.target*100,c=i===0?'#ffbf47':n>=50?'#00d084':n>=35?'#4f8ef7':'#ff5873';return `<article class="exec-card" style="--c:${c}"><div class="exec-top"><span class="num">${fmt(i+1)}</span><span class="sub">${fmt(d.regions)} منطقه</span></div><h3>${esc(d.name)}</h3><div class="score">${pct(n)}</div><div class="track"><div style="width:${Math.min(n,100)}%"></div></div><div class="sub">${fmt(d.contracts)} قرارداد از هدف ${fmt(d.target)}</div><div class="exec-foot"><span>در حال تکمیل <b>${fmt(d.completing)}</b></span><span>در مذاکره <b>${fmt(d.negotiating)}</b></span></div></article>`}).join('');regions.innerHTML=all.map((d,i)=>{let p=100*d.contracts/d.target,c=p>=60?'#00d084':p>=45?'#4f8ef7':p>=35?'#ffbe47':'#ff5873';const status=p>=60?'پیشتاز':p>=45?'در مسیر':p>=35?'نیازمند شتاب':'نیازمند پیگیری';return `<article class="region" style="--c:${c}"><div class="rank">${fmt(i+1)}</div><div class="identity"><h3>${esc(d.name)}</h3><p>مدیر اجرایی: ${esc(d.exec)}</p><span class="tag">${status}</span></div><div class="tile performance"><div class="label">تحقق هدف قطعی</div><strong>${pct(p)}</strong><small>${fmt(d.contracts)} / ${fmt(d.target)} قرارداد</small><div class="track"><div style="width:${Math.min(p,100)}%"></div></div></div><div class="tile"><div class="label">قراردادهای قطعی</div><strong>${fmt(d.contracts)}</strong><div class="flow-tiny"><span>ستادی ${fmt(d.hq)}</span><span>فرانچایز ${fmt(d.fr)}</span></div><small>جدید: ستادی ${fmt(d.newHQ)} · فرانچایز ${fmt(d.newFr)}</small></div><div class="tile remaining"><div class="label">مانده تا هدف</div><strong>${fmt(Math.max(0,d.target-d.contracts))}</strong><small>قرارداد قطعی موردنیاز</small></div><div class="tile flow"><div class="label">فرانچایز در حال تکمیل</div><strong>${fmt(d.completing)}</strong><small>در جریان · خارج از تحقق هدف</small></div><div class="tile pipeline"><div class="label">املاک در حال مذاکره: <b style="color:#65d9e8">${fmt(d.negotiating)}</b></div><div>${d.properties.length?d.properties.map(x=>`<span class="property">${esc(x)}</span>`).join(''):'<span class="muted">ملکی ثبت نشده</span>'}</div>${d.properties.length!==d.negotiating?`<small style="color:#e6b36c">${fmt(d.properties.length)} نام در سلول‌ها ثبت شده</small>`:''}</div></article>`}).join('')||'<p class="muted">منطقه‌ای با این فیلتر یافت نشد.</p>'}
+populate();render();refresh();setInterval(refresh,5*60*1000);
+</script></body></html>
