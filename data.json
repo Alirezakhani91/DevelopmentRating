@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-21T12:40:07.199452+00:00",
+  "updatedAt": "2026-11-21T13:33:42.014526+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -41,10 +41,10 @@
       "exec": "حسینی نسب عماد",
       "target": 34,
       "hq": 13,
-      "fr": 8,
-      "contracts": 21,
+      "fr": 9,
+      "contracts": 22,
       "newHQ": 0,
-      "newFr": 1,
+      "newFr": 2,
       "completing": 5,
       "negotiating": 0,
       "properties": [
@@ -288,7 +288,7 @@
       "contracts": 12,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 10,
+      "completing": 11,
       "negotiating": 0,
       "properties": [
         "4"
