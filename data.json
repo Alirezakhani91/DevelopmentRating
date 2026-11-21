@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-21T04:10:20.698289+00:00",
+  "updatedAt": "2026-11-21T10:14:12.676872+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -12,9 +12,11 @@
       "contracts": 24,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 5,
+      "completing": 3,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "5"
+      ]
     },
     {
       "name": "بهنان مسعود",
@@ -28,6 +30,7 @@
       "completing": 1,
       "negotiating": 3,
       "properties": [
+        "7",
         "رودکی",
         "میدان آزادی",
         "شمس آبادی"
@@ -44,7 +47,9 @@
       "newFr": 1,
       "completing": 5,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "6"
+      ]
     },
     {
       "name": "اثنی عشری حسین",
@@ -57,7 +62,9 @@
       "newFr": 0,
       "completing": 1,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "9"
+      ]
     },
     {
       "name": "مرزبان یزدان",
@@ -71,6 +78,7 @@
       "completing": 11,
       "negotiating": 1,
       "properties": [
+        "8",
         "خ شاهد"
       ]
     },
@@ -86,6 +94,7 @@
       "completing": 3,
       "negotiating": 1,
       "properties": [
+        "6",
         "کله رود"
       ]
     },
@@ -101,6 +110,7 @@
       "completing": 4,
       "negotiating": 5,
       "properties": [
+        "13",
         "شیخ هادی",
         "هلال احمر",
         "17 شهریور",
@@ -120,6 +130,7 @@
       "completing": 2,
       "negotiating": 4,
       "properties": [
+        "8",
         "احمدآباد",
         "خاقانی",
         "عبادی",
@@ -135,7 +146,7 @@
       "contracts": 7,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 0,
+      "completing": 2,
       "negotiating": 1,
       "properties": [
         "میدان حج"
@@ -153,6 +164,7 @@
       "completing": 1,
       "negotiating": 4,
       "properties": [
+        "5",
         "ملک شهر",
         "علامه",
         "چهار راه فرسان",
@@ -171,6 +183,7 @@
       "completing": 2,
       "negotiating": 3,
       "properties": [
+        "6",
         "علوی",
         "امام خمینی",
         "الیگودرز مدرس"
@@ -188,6 +201,7 @@
       "completing": 4,
       "negotiating": 1,
       "properties": [
+        "5",
         "اهواز"
       ]
     },
@@ -203,6 +217,7 @@
       "completing": 1,
       "negotiating": 4,
       "properties": [
+        "8",
         "شمشیری",
         "گیشا",
         "شاه پروری",
@@ -221,6 +236,7 @@
       "completing": 6,
       "negotiating": 2,
       "properties": [
+        "5",
         "خسروی",
         "بوشهر جمهوری"
       ]
@@ -237,6 +253,7 @@
       "completing": 2,
       "negotiating": 3,
       "properties": [
+        "11",
         "شهرک شاهد",
         "کرج فردوسی",
         "جاده ملارد"
@@ -254,6 +271,7 @@
       "completing": 5,
       "negotiating": 5,
       "properties": [
+        "15",
         "گلستان",
         "شهرقدس",
         "مصطفی خمینی",
@@ -272,7 +290,9 @@
       "newFr": 0,
       "completing": 10,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "4"
+      ]
     },
     {
       "name": "غرب گیلان",
@@ -285,20 +305,23 @@
       "newFr": 0,
       "completing": 0,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "8"
+      ]
     },
     {
       "name": "پوررجبی امید",
       "exec": "نوری فرید",
       "target": 46,
-      "hq": 12,
+      "hq": 13,
       "fr": 5,
-      "contracts": 17,
-      "newHQ": 0,
+      "contracts": 18,
+      "newHQ": 1,
       "newFr": 0,
       "completing": 2,
       "negotiating": 3,
       "properties": [
+        "9",
         "دولت آباد",
         "افسریه",
         "قرچک"
@@ -316,6 +339,7 @@
       "completing": 4,
       "negotiating": 6,
       "properties": [
+        "5",
         "بوستان",
         "کانکس",
         "گلستان",
@@ -335,7 +359,9 @@
       "newFr": 0,
       "completing": 9,
       "negotiating": 0,
-      "properties": []
+      "properties": [
+        "7"
+      ]
     },
     {
       "name": "صادقی سعید",
@@ -349,6 +375,7 @@
       "completing": 7,
       "negotiating": 2,
       "properties": [
+        "5",
         "خوی 1",
         "خوی 2"
       ]
@@ -365,6 +392,7 @@
       "completing": 5,
       "negotiating": 3,
       "properties": [
+        "4",
         "فرمهین",
         "خمین",
         "نواب"
@@ -382,6 +410,7 @@
       "completing": 6,
       "negotiating": 3,
       "properties": [
+        "6",
         "بلوار کشاورز",
         "شهدا",
         "شهابی"
@@ -399,6 +428,7 @@
       "completing": 2,
       "negotiating": 1,
       "properties": [
+        "4",
         "لنگرود"
       ]
     }
