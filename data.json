@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-21T10:14:12.676872+00:00",
+  "updatedAt": "2026-11-21T12:40:07.199452+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -155,7 +155,7 @@
     {
       "name": "منجزی وند رضا",
       "exec": "محالی میثم",
-      "target": 22,
+      "target": 24,
       "hq": 9,
       "fr": 1,
       "contracts": 10,
@@ -198,7 +198,7 @@
       "contracts": 12,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 4,
+      "completing": 3,
       "negotiating": 1,
       "properties": [
         "5",
