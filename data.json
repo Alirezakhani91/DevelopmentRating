@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-22T06:48:58.393917+00:00",
+  "updatedAt": "2026-11-22T15:05:20.991987+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -246,10 +246,10 @@
       "exec": "نوری فرید",
       "target": 52,
       "hq": 17,
-      "fr": 5,
-      "contracts": 22,
+      "fr": 6,
+      "contracts": 23,
       "newHQ": 0,
-      "newFr": 0,
+      "newFr": 1,
       "completing": 2,
       "negotiating": 3,
       "properties": [
@@ -288,7 +288,7 @@
       "contracts": 12,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 11,
+      "completing": 8,
       "negotiating": 0,
       "properties": [
         "4"
@@ -357,7 +357,7 @@
       "contracts": 10,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 7,
+      "completing": 5,
       "negotiating": 0,
       "properties": [
         "7"
@@ -407,7 +407,7 @@
       "contracts": 12,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 6,
+      "completing": 7,
       "negotiating": 3,
       "properties": [
         "6",
