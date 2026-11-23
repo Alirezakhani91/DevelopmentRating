@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-23T09:51:08.365888+00:00",
+  "updatedAt": "2026-11-23T21:55:36.443351+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -127,7 +127,7 @@
       "contracts": 21,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 2,
+      "completing": 1,
       "negotiating": 4,
       "properties": [
         "8",
@@ -176,10 +176,10 @@
       "exec": "محسنی مجید",
       "target": 18,
       "hq": 1,
-      "fr": 7,
-      "contracts": 8,
+      "fr": 8,
+      "contracts": 9,
       "newHQ": 0,
-      "newFr": 0,
+      "newFr": 1,
       "completing": 5,
       "negotiating": 3,
       "properties": [
@@ -353,10 +353,10 @@
       "exec": "هم مسلک بهمن",
       "target": 30,
       "hq": 6,
-      "fr": 4,
-      "contracts": 10,
+      "fr": 5,
+      "contracts": 11,
       "newHQ": 0,
-      "newFr": 0,
+      "newFr": 1,
       "completing": 5,
       "negotiating": 0,
       "properties": [
