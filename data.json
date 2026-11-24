@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-23T21:55:36.443351+00:00",
+  "updatedAt": "2026-11-24T05:46:42.375199+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -180,7 +180,7 @@
       "contracts": 9,
       "newHQ": 0,
       "newFr": 1,
-      "completing": 5,
+      "completing": 4,
       "negotiating": 3,
       "properties": [
         "6",
@@ -357,7 +357,7 @@
       "contracts": 11,
       "newHQ": 0,
       "newFr": 1,
-      "completing": 5,
+      "completing": 4,
       "negotiating": 0,
       "properties": [
         "7"
