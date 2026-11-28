@@ -1,7 +1,7 @@
 {
   "success": true,
   "source": "Google Sheets published CSV",
-  "updatedAt": "2026-11-28T03:44:19.410273+00:00",
+  "updatedAt": "2026-11-28T12:27:52.344494+00:00",
   "data": [
     {
       "name": "اتحاد مصطفی",
@@ -22,9 +22,9 @@
       "name": "بهنان مسعود",
       "exec": "محالی میثم",
       "target": 27,
-      "hq": 14,
+      "hq": 15,
       "fr": 3,
-      "contracts": 17,
+      "contracts": 18,
       "newHQ": 0,
       "newFr": 0,
       "completing": 1,
@@ -107,7 +107,7 @@
       "contracts": 18,
       "newHQ": 1,
       "newFr": 0,
-      "completing": 6,
+      "completing": 5,
       "negotiating": 5,
       "properties": [
         "13",
@@ -214,7 +214,7 @@
       "contracts": 12,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 2,
+      "completing": 1,
       "negotiating": 4,
       "properties": [
         "8",
@@ -268,7 +268,7 @@
       "contracts": 19,
       "newHQ": 0,
       "newFr": 0,
-      "completing": 5,
+      "completing": 4,
       "negotiating": 5,
       "properties": [
         "15",
@@ -331,9 +331,9 @@
       "name": "بختیاریان رضا",
       "exec": "محسنی مجید",
       "target": 26,
-      "hq": 3,
+      "hq": 4,
       "fr": 6,
-      "contracts": 9,
+      "contracts": 10,
       "newHQ": 0,
       "newFr": 0,
       "completing": 6,
@@ -407,7 +407,7 @@
       "contracts": 13,
       "newHQ": 0,
       "newFr": 1,
-      "completing": 6,
+      "completing": 4,
       "negotiating": 3,
       "properties": [
         "6",
